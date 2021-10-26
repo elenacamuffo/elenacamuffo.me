@@ -21,7 +21,6 @@
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top"><b>Elena Camuffo</b></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -78,8 +77,8 @@
 							</p>
 						<h5 class="text-white mb-4">Degree Theses</h5>
                         <p class="text-white-50">						
-                            <b>2019 Bachelor thesis "Mixed Reality Applications in medical theraphy"</b>, supervisor: Prof. Simone Milani, co-supervisors: Hannah Luxenberg Tono, Dr. Alberto Tono, Dr. Sebastiano Verde, Fabio Capraro. <a href="download/BSc.pdf" target="_blank">[PDF]</a> <a href="download/BSc_slides.pdf" target="_blank">[Slides]</a> <a target="_blank" href="https://youtu.be/lKykc73Y_rY">[Video]</a></br></br>
-							<b>2020 Master thesis "Curriculum and Contrastive Learning in LiDAR Semantic Segmentation"</b>, supervisor: Prof. Simone Milani, co-supervisor: Dr. Umberto Michieli. <a href="download/MSc.pdf" target="_blank">[PDF]</a> <a href="download/MSc_slides.pdf" target="_blank">[Slides]</a>
+                            2019 Bachelor thesis "Mixed Reality Applications in medical theraphy", supervisor: Prof. Simone Milani, co-supervisors: Hannah Luxenberg Tono, Dr. Alberto Tono, Dr. Sebastiano Verde, Fabio Capraro. <a href="download/BSc.pdf" target="_blank">[PDF]</a> <a href="download/BSc_slides.pdf" target="_blank">[Slides]</a> <a target="_blank" href="https://youtu.be/lKykc73Y_rY">[Video]</a></br></br>
+							2020 Master thesis "Curriculum and Contrastive Learning in LiDAR Semantic Segmentation", supervisor: Prof. Simone Milani, co-supervisor: Dr. Umberto Michieli. <a href="download/MSc.pdf" target="_blank">[PDF]</a> <a href="download/MSc_slides.pdf" target="_blank">[Slides]</a>
 							</p>
 						<!---->
 						<h5 class="text-white mb-4">Degrees Projects</h5>
@@ -120,7 +119,7 @@
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7">
 					<div class="embed-responsive embed-responsive-4by3">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=jRKJFwiuCsA" alt="..."></iframe>
+					  <iframe width="560" height="315" src="https://www.youtube.com/embed/jRKJFwiuCsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					</div>
                     <div class="col-xl-4 col-lg-5">
@@ -133,12 +132,16 @@
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+					<!--img class="img-fluid" src="img/rtsi2.png" alt="..." /></div-->
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">RTSI 2021</h4>
                                     <p class="mb-0 text-white-50">"My research in 5 minutes", online event for young researchers' pitches.</p>
+									<hr class="d-none d-lg-block mb-0 ms-0" />
+									<h4 class="text-white">TMM Reviewer 2021</h4>
+                                    <p class="mb-0 text-white-50">Peer reviewer for "IEEE Transaction on Multimedia" journal.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -147,7 +150,8 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><!--img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div-->
+					<img class="img-fluid" src="img/venetonight.jfif" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -253,7 +257,12 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Elena Camuffo 2021</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">
+		Last update: <p id="date"></p></br>
+		Copyright &copy; Elena Camuffo 2021</div></footer>
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
