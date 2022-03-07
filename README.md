@@ -13,7 +13,7 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
-Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", MDPI Sensors Special Issue.
+* Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", MDPI Sensors Special Issue.
 
 
         @article{camuffo2022recent,
@@ -28,7 +28,7 @@ Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning 
         }
 
 
-Elena Camuffo, Luca Gorghetto and Leonardo Badia, "Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory", APCCAS 2021.
+* Elena Camuffo, Luca Gorghetto and Leonardo Badia, "Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory", APCCAS 2021.
 
 
         @inproceedings{camuffo2021moving,
