@@ -13,7 +13,7 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
-* Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", MDPI Sensors Special Issue.
+* Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", MDPI Sensors Special Issue, 2022.
 
 
         @article{camuffo2022recent,
