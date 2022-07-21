@@ -40,3 +40,13 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
           organization={IEEE}
         }
 
+
+* Elena Camuffo, Federica Battisti, Francesco Pham and Simone Milani, "Deep 3D Model Optimization for Immersive and Interactive Applications", EUVIP 2022.
+
+
+      @article{camuffo2022deep,
+        title={Deep 3D Model Optimization for Immersive and Interactive Applications},
+        author={Camuffo, Elena and Battisti, Federica and Pham, Francesco and Milani, Simone},
+        journal={European Workshop on Visual Information Processing (EUVIP)},
+        year={2022}
+        }
