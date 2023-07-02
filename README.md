@@ -13,40 +13,15 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
-* Elena Camuffo, Daniele Mari and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", MDPI Sensors Special Issue, 2022.
+* Devid Campagnolo*, Elena Camuffo*, Umberto Michieli, Paolo Borin, Simone Milani, and Andrea Giordano, "Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation", ICIP, 2023.,
 
+* Daniele Mari, Elena Camuffo, and Simone Milani, "CACTUS: Content Aware Compression and Transmission Using Semantics for Automotive LiDAR Data", Sensors, 2023.
 
-        @article{camuffo2022recent,
-          title={Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview},
-          author={Camuffo, Elena and Mari, Daniele and Milani, Simone},
-          journal={Sensors},
-          volume={22},
-          number={4},
-          pages={1357},
-          year={2022},
-          publisher={Multidisciplinary Digital Publishing Institute}
-        }
+* Elena Camuffo, and Simone Milani, "Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine strategies on Sparse Data", CVPRW, 2023.
 
+* Elena Camuffo, Daniele Mari, and Simone Milani, "Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview", Sensors, 2022.
 
-* Elena Camuffo, Luca Gorghetto and Leonardo Badia, "Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory", APCCAS 2021.
+* Elena Camuffo, Luca Gorghetto, and Leonardo Badia, "Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory", APCCAS 2021.
 
+* Elena Camuffo, Federica Battisti, Francesco Pham, and Simone Milani, "Deep 3D Model Optimization for Immersive and Interactive Applications", EUVIP 2022.
 
-        @inproceedings{camuffo2021moving,
-          title={Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory},
-          author={Camuffo, Elena and Gorghetto, Luca and Badia, Leonardo},
-          booktitle={2021 IEEE Asia Pacific Conference on Circuit and Systems (APCCAS)},
-          pages={41--44},
-          year={2021},
-          organization={IEEE}
-        }
-
-
-* Elena Camuffo, Federica Battisti, Francesco Pham and Simone Milani, "Deep 3D Model Optimization for Immersive and Interactive Applications", EUVIP 2022.
-
-
-      @article{camuffo2022deep,
-        title={Deep 3D Model Optimization for Immersive and Interactive Applications},
-        author={Camuffo, Elena and Battisti, Federica and Pham, Francesco and Milani, Simone},
-        journal={European Workshop on Visual Information Processing (EUVIP)},
-        year={2022}
-        }
