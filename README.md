@@ -13,7 +13,11 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
-* Devid Campagnolo*, Elena Camuffo*, Umberto Michieli, Paolo Borin, Simone Milani, and Andrea Giordano, "Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation", ICIP, 2023.,
+* Elena Camuffo, Umberto Michieli, Ji Joong Moon, Deahyun Kim and Mete Ozay, "FFT-based Selection And Optimization Of Statistics For Robust Recognition Of Severely Corrupted Images", ICASSP, 2023.
+
+* Elena Camuffo, Umberto Michieli and Simone Milani, "Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation", IEEE Transactions on Multimedia, 2023.
+
+* Devid Campagnolo*, Elena Camuffo*, Umberto Michieli, Paolo Borin, Simone Milani, and Andrea Giordano, "Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation", ICIP, 2023.
 
 * Daniele Mari, Elena Camuffo, and Simone Milani, "CACTUS: Content Aware Compression and Transmission Using Semantics for Automotive LiDAR Data", Sensors, 2023.
 
