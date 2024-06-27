@@ -13,7 +13,9 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
-* Elena Camuffo, Umberto Michieli, Ji Joong Moon, Deahyun Kim and Mete Ozay, "FFT-based Selection And Optimization Of Statistics For Robust Recognition Of Severely Corrupted Images", ICASSP, 2023.
+* Francesco Barbato, Elena Camuffo, Simone Milani, Pietro Zanuttigh, "Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network", ICIP, 2024.
+
+* Elena Camuffo, Umberto Michieli, Ji Joong Moon, Deahyun Kim and Mete Ozay, "FFT-based Selection And Optimization Of Statistics For Robust Recognition Of Severely Corrupted Images", ICASSP, 2024.
 
 * Elena Camuffo, Umberto Michieli and Simone Milani, "Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation", IEEE Transactions on Multimedia, 2023.
 
