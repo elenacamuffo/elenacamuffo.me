@@ -13,6 +13,8 @@ https://www.semanticscholar.org/author/Elena-Camuffo/2152057906
 
 ## List of Publications
 
+* Elena Camuffo, Umberto Michieli, Simone Milani, Ji Joong Moon and Mete Ozay, "Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics", IROS, 2024.
+
 * Francesco Barbato, Elena Camuffo, Simone Milani, Pietro Zanuttigh, "Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network", ICIP, 2024.
 
 * Elena Camuffo, Umberto Michieli, Ji Joong Moon, Deahyun Kim and Mete Ozay, "FFT-based Selection And Optimization Of Statistics For Robust Recognition Of Severely Corrupted Images", ICASSP, 2024.
