@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article>
+  <header class="publication-header">
+    {% if page.image %}
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="publication-image">
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <p><strong>Published in:</strong> {{ page.venue }}</p>
+  </header>
+
+  <section class="publication-content">
+    <p>{{ page.excerpt }}</p>
+    <div class="publication-links">
+      {% if page.paperurl %}
+      <a href="{{ page.paperurl }}" target="_blank" title="View Paper">
+        <i class="fas fa-file-pdf"></i> Paper
+      </a>
+      {% endif %}
+      {% if page.slidesurl %}
+      <a href="{{ page.slidesurl }}" target="_blank" title="View Slides">
+        <i class="fas fa-presentation"></i> Slides
+      </a>
+      {% endif %}
+      {% if page.codeurl %}
+      <a href="{{ page.codeurl }}" target="_blank" title="View Code">
+        <i class="fab fa-github"></i> Code
+      </a>
+      {% endif %}
+    </div>
+  </section>
+</article>
