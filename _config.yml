@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Elena Camuffo"
 description              : &description "Research Scientist, 3D Artist"
 url                      : https://elenacamuffo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "/redesign" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "elenacamuffo/elenacamuffo.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -21,7 +21,7 @@ repository               : "elenacamuffo/elenacamuffo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "my_picture.png"
+  avatar           : "my_picture.jpeg"
   name             : "Research Scientist - 3D Artist"
   pronouns         : # example: "she/her"  
   bio              : "I am a postdoctoral research scientist at the University of Padova, Italy. I am also a 3D artist and I love to create digital art."
