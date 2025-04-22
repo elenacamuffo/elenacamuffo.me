@@ -1,0 +1,60 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<style>
+  .pub-entry {
+  margin-bottom: 1.5em;
+  padding-bottom: 0em;
+}
+
+.pub-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pub-btn:hover {
+  background: #e0e0e0;
+}
+</style>
+
+<div class="pub-entry">
+    • <strong style="font-size: 0.9rem;">{{ post.title }}</strong><br />
+    <span style="font-size: 0.8rem;" class="pub-authors"><i>{{ post.authors }}</i></span><br />
+    <span style="font-size: 0.8rem;" class="pub-venue">{{ post.venue }}, {{ post.year }}</span>
+  <br />
+  {% if post.paperurl %}
+    <a href="{{ post.paperurl }}" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  {% endif %}
+  {% if post.slidesurl %}
+    <a href="{{ post.slidesurl }}" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+  {% endif %}
+  {% if post.code %}
+    <a href="{{ post.code }}" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+  {% endif %}
+  {% if post.blog %}
+    <a href="{{ post.blog }}" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+  {% endif %}
+  {% if post.dataset %}
+  <a href="{{ post.dataset }}" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
+  {% endif %}
+  {% if post.bib %}
+    <a href="{{ post.bib }}" class="pub-btn"><i class="fa-solid fa-quote-left"></i> Cite</a>
+  {% endif %}
+</div>

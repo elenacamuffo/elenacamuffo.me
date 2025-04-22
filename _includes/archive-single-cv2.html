@@ -1,0 +1,25 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<style>
+  .pub-entry {
+  margin-bottom: 0.5em;
+  padding-bottom: 0em;
+}
+</style>
+
+<div class="pub-entry">
+    • <span style="font-size: 0.8rem;" class="pub-cit">{{ post.citation }}</span>
+</div>
+

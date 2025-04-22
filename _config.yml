@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Elena Camuffo, PhD"
 title_separator          : "-"
 name                     : &name "Elena Camuffo"
-description              : &description "Research Scientist, 3D Artist"
+description              : &description "Research Scientist || 3D Tech Artist"
 url                      : https://elenacamuffo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "elenacamuffo/elenacamuffo.github.io"
@@ -21,23 +21,23 @@ repository               : "elenacamuffo/elenacamuffo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "my_picture.jpeg"
-  name             : "Research Scientist - 3D Artist"
+  avatar           : "elena.jpeg"
+  name             : "AI Research Scientist - 3D Tech Artist"
   pronouns         : # example: "she/her"  
-  bio              : "I am a postdoctoral research scientist at the University of Padova, Italy. I am also a 3D artist and I love to create digital art."
+  bio              : "PostDoc at the University of Padova, leading research in AI and Vision. Freelancer 3D Tech Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology." 
   location         : "Padova, Italy"
   employer         : "University of Padova"
   uri              : # URL
-  email            : "elena.camuffo@unipd.it" 
+  email            : "elenacamuffo97@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=Oo8fbq4AAAAJ&hl=it"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0000-0002-8351-4650"
   semantic         : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Elena-Camuffo?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development
@@ -49,7 +49,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  artstation       : https://www.artstation.com/ellelily97 # Username
+  artstation       : ellelily97 # Username
   bluesky          : # Username
   facebook         : # https://www.facebook.com/elena.camuffo # Username
   flickr           : # Username
@@ -57,9 +57,9 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # https://www.instagram.com/elenacamuffo/ # Username
+  instagram        : elle97art # Username
   lastfm           : # Username
-  linkedin         : https://www.linkedin.com/in/elena-camuffo-72231714a/ # Username
+  linkedin         : elena-camuffo-72231714a # Username
   mastodon         : # URL
   medium           : https://medium.com/@elenacamuffo97 # URL
   pinterest        : # Username
@@ -81,8 +81,8 @@ publication_category:
     title: 'Conference Papers'
   manuscripts:
     title: 'Journal Articles'   
-  books:
-    title: 'Books' 
+  theses:
+    title: 'Theses' 
 
 
 # Site Settings
