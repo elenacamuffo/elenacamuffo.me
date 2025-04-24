@@ -8,7 +8,8 @@ date: 2024-01-01
 location: "Padova, Italy"
 ---
 
-This course provides an introduction to the principles of 3D vision and extended reality (XR), emphasizing practical applications and development using Unity. Key topics include 3D reconstruction, virtual environments, and interaction techniques.
+This course (taught 2019--2024) provided an introduction to the principles of 3D vision and extended reality (XR), emphasizing practical applications and development using Unity3D. Key topics included 3D reconstruction, virtual environments, interaction techniques and machine learning. \
+[GitHub repository](https://github.com/elenacamuffo/3DVisionXRLabs-Unity.git)<i class="fa-brands fa-github"></i>.
 
 ## Topics Covered
 
