@@ -9,6 +9,12 @@ year: 2023
 venue: 'IEEE Transactions on Multimedia'
 paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10368362'
 citation: 'Camuffo, E., Michieli, U., & Milani, S. (2023). "Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation." <i>IEEE Transactions on Multimedia</i>, 25(1), 567-578.'
+bib: "@inproceedings{camuffo2024segmentation,
+  title = {Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network},
+  author = {Barbato, Francesco and Camuffo, Elena and Milani, Simone and Zanuttigh, Pietro},
+  booktitle = {Proceedings of the International Conference on Image Processing (ICIP)},
+  year = {2024}
+}"
 ---
 
 We propose a multi-modal network for continual semantic segmentation of road scenes. By aligning features symmetrically across modalities, the method effectively adapts to new data while maintaining high segmentation accuracy on previously seen datasets.

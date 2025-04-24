@@ -176,14 +176,14 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI Research Scientist - 3D Tech Artist">
+    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI Research Scientist - Technical 3D Artist">
     
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">AI Research Scientist - 3D Tech Artist</h3>
+    <h3 class="author__name">AI Research Scientist - Technical 3D Artist</h3>
     
-    <p class="author__bio">PostDoc at the University of Padova, leading research in AI and Vision. Freelancer 3D Tech Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology.</p>
+    <p class="author__bio">PostDoc at the University of Padova, leading research in AI and Vision. Freelancer Junior Technical 3D Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology.</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -229,6 +229,9 @@
 
       <!-- Font Awesome icons / Social media -->
       
+        <li><a href="https:/artstation.com/ellelily97"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>ArtStation</a></li>
+      
+      
       
             
       
@@ -273,22 +276,62 @@
       <h1 class="page__title">Publications</h1>
     
     
-  <div class="wordwrap">For the full list of my publications please refer to <a href="https://scholar.google.com/citations?user=Oo8fbq4AAAAJ&hl=it">my Google Scholar profile</a><i class="fa-brands fa-google-scholar"></i>.</div>
+  <div class="wordwrap">For the full list of my publications please refer to <a href="https://scholar.google.com/citations?user=Oo8fbq4AAAAJ&hl=it">my Google Scholar profile</a> <i class="fa-brands fa-google-scholar"></i>.</div>
 
 
 
 
-<!-- New style rendering if publication categories are defined -->
+<style>
+#pub-filter {
+  margin: 1rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+#sort-by {
+  padding: 0.6rem 0.6rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #999;
+  color: #333;
+  transition: all 0.2s ease;
+}
+#sort-by:hover, #sort-by:focus {
+  border-color: #999;
+  background: #666;
+  outline: none;
+}
+.pub-category-title {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+</style>
 
-  
+<div id="pub-filter">
+  <label for="sort-by"><strong>Sort by:</strong></label>
+  <select id="sort-by">
+    <option value="venue">Venue type</option>
+    <option value="year">Year (newest first)</option>
+  </select>
+</div>
+
+<div id="pub-list">
+  <div id="venue-view">
     
-    
-      
-      
-        <h2>Conference Papers</h2><hr />
+      <div class="pub-category" data-category="conferences">
+        <h2 class="pub-category-title">Conference Papers</h2><hr />
         
-      
-      
+          
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
 
 
 
@@ -296,43 +339,106 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Paper accepted as Journal</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo et al.</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">SIGGRAPH, 2025</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Paper accepted as Journal</strong>
+    <span class="pub-authors"><i>Elena Camuffo et al.</i></span>
+    <span class="pub-venue">SIGGRAPH, 2025</span>
   
-  
-  
-</div>
-
     
-      
-      
-      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2024" data-venue="conferences">
+              
 
 
 
@@ -340,45 +446,113 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani, Jijoong Moon, Mete Ozay</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">International Conference on Intelligent Robots and Systems (IROS), 2024</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://arxiv.org/abs/2407.06450" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani, Jijoong Moon, Mete Ozay</i></span>
+    <span class="pub-venue">International Conference on Intelligent Robots and Systems (IROS), 2024</span>
   
-  
-  
-  
-</div>
-
     
-      
-      
-      
+      <a href="https://arxiv.org/pdf/2407.06450" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="enhanced-model-robustness-to-input-corruptions-by-per-corruption-adaptation-of-normalization-statistics"
+         data-bib="@inproceedings{camuffo2024robustness, title = {Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics}, author = {Camuffo, Elena and Michieli, Umberto and Milani, Simone and Moon, Jijoong and Ozay, Mete}, booktitle = {Proceedings of the International Conference on Intelligent Robots and Systems (IROS)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2024" data-venue="conferences">
+              
 
 
 
@@ -386,45 +560,113 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Francesco Barbato, Elena Camuffo, Simone Milani, Pietro Zanuttigh</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">International Conference on Image Processing (ICIP), 2024</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://arxiv.org/pdf/2308.04702.pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network</strong>
+    <span class="pub-authors"><i>Francesco Barbato, Elena Camuffo, Simone Milani, Pietro Zanuttigh</i></span>
+    <span class="pub-venue">International Conference on Image Processing (ICIP), 2024</span>
   
-  
-  
-  
-</div>
-
     
-      
-      
-      
+      <a href="https://arxiv.org/pdf/2308.04702.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="continual-road-scene-semantic-segmentation-via-feature-aligned-symmetric-multi-modal-network"
+         data-bib="@inproceedings{camuffo2024segmentation, title = {Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network}, author = {Barbato, Francesco and Camuffo, Elena and Milani, Simone and Zanuttigh, Pietro}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
 
 
 
@@ -432,53 +674,121 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Davide Campagnolo, Elena Camuffo, Umberto Michieli, Paolo Borin, Simone Milani, Andrea Giordano</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">International Conference on Image Processing (ICIP), 2023</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://ieeexplore.ieee.org/abstract/document/10222064" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
-    <a href="https://github.com/LTTM/Scan-to-BIM/files/12861649/Fully-Automated.Scan-to-BIM.via.Point.Cloud.Instance.Segmentation.Base.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+  <div class="pub-entry">
+    <strong>Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation</strong>
+    <span class="pub-authors"><i>Devid Campagnolo, Elena Camuffo, Umberto Michieli, Paolo Borin, Simone Milani, Andrea Giordano</i></span>
+    <span class="pub-venue">International Conference on Image Processing (ICIP), 2023</span>
   
-  
-    <a href="https://github.com/LTTM/Scan-to-BIM" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
-  
-  
-  
-  <a href="https://drive.google.com/drive/folders/1NmRegFS9HQQx7IJ7Klpn8mgWbW6bv9Eo?usp=drive_link" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
-  
-  
-</div>
-
     
-      
+      <a href="https://www.researchgate.net/publication/374543374_Fully_Automated_Scan-to-BIM_Via_Point_Cloud_Instance_Segmentation#fullTextFileContent" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://github.com/LTTM/Scan-to-BIM/files/12861649/Fully-Automated.Scan-to-BIM.via.Point.Cloud.Instance.Segmentation.Base.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+      <a href="https://github.com/LTTM/Scan-to-BIM" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+      <a href="https://drive.google.com/drive/folders/1NmRegFS9HQQx7IJ7Klpn8mgWbW6bv9Eo?usp=drive_link" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="fully-automated-scan-to-bim-via-point-cloud-instance-segmentation"
+         data-bib="@inproceedings{camuffo2023scanbim, title = {Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation}, author = {Campagnolo, Dediv and Camuffo, Elena and Michieli, Umberto and Borin, Paolo and Milani, Simone and Giordano, Andrea}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
         
-      
-      
-      
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
 
 
 
@@ -486,47 +796,115 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">FFT-based Selection and Optimization of Statistics for Robust Recognition of Severely Corrupted Images</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Jijoong Moon, Donggyu Kim, Mete Ozay</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://arxiv.org/pdf/2403.14335.pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>FFT-based Selection and Optimization of Statistics for Robust Recognition of Severely Corrupted Images</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Jijoong Moon, Daheyun Kim, Mete Ozay</i></span>
+    <span class="pub-venue">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023</span>
   
-  
-    <a href="https://research.samsung.com/blog/FFT-Based-Selection-and-Optimization-of-Statistics-for-Robust-Recognition-of-Severely-Corrupted-Images" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
-  
-  
-  
-</div>
-
     
-      
-      
-      
+      <a href="https://arxiv.org/pdf/2403.14335.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+      <a href="https://research.samsung.com/blog/FFT-Based-Selection-and-Optimization-of-Statistics-for-Robust-Recognition-of-Severely-Corrupted-Images" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="fft-based-selection-and-optimization-of-statistics-for-robust-recognition-of-severely-corrupted-images"
+         data-bib="@inproceedings{camuffo2023fft, title = {FFT-based Selection and Optimization of Statistics for Robust Recognition of Severely Corrupted Images}, author = {Camuffo, Elena and Michieli, Umberto and Moon, Jijoong and Kim, Daheyun and Ozay, Mete}, booktitle = {Proceedings of the International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
 
 
 
@@ -534,51 +912,119 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine Strategies on Sparse Data</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Simone Milani</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2023</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://openaccess.thecvf.com/content/CVPR2023W/CLVision/papers/Camuffo_Continual_Learning_for_LiDAR_Semantic_Segmentation_Class-Incremental_and_Coarse-To-Fine_Strategies_CVPRW_2023_paper.pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine Strategies on Sparse Data</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Simone Milani</i></span>
+    <span class="pub-venue">Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2023</span>
   
-    <a href="https://github.com/LTTM/CL-PCSS" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
-  
-  
-  
-  
-</div>
-
     
-      
+      <a href="https://openaccess.thecvf.com/content/CVPR2023W/CLVision/papers/Camuffo_Continual_Learning_for_LiDAR_Semantic_Segmentation_Class-Incremental_and_Coarse-To-Fine_Strategies_CVPRW_2023_paper.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+      <a href="https://github.com/LTTM/CL-PCSS" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="continual-learning-for-lidar-semantic-segmentation-class-incremental-and-coarse-to-fine-strategies-on-sparse-data"
+         data-bib="@inproceedings{camuffo2023lidar, title = {Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine Strategies on Sparse Data}, author = {Camuffo, Elena and Milani, Simone}, booktitle = {Proceedings of the Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
         
-      
+          
         
-      
-      
-      
+          
+        
+          
+            <div class="pub-entry" data-year="2022" data-venue="conferences">
+              
 
 
 
@@ -586,45 +1032,119 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">3D Model Optimization for Immersive and Interactive Applications</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Francesco Battisti, Francesco Pham, Simone Milani</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">European Workshop on Visual Information Processing (EUVIP), 2022</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://elenacamuffo.github.io/download/EUVIP2022.pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>3D Model Optimization for Immersive and Interactive Applications</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Francesco Battisti, Francesco Pham, Simone Milani</i></span>
+    <span class="pub-venue">European Workshop on Visual Information Processing (EUVIP), 2022</span>
   
-  
-  
-  
-</div>
-
     
-      
-      
-      
+      <a href="https://elenacamuffo.github.io/download/EUVIP2022.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/EUVIP_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+      <a href="https://github.com/frankplus/Deep-3D-optimization" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="3d-model-optimization-for-immersive-and-interactive-applications"
+         data-bib="@article{camuffo2022model3d, title = {3D Model Optimization for Immersive and Interactive Applications}, author = {Camuffo, Elena and Battisti, Francesco and Pham, Francesco and Milani, Simone}, journal = {European Workshop on Visual Information Processing (EUVIP)}, year = {2022} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2021" data-venue="conferences">
+              
 
 
 
@@ -632,59 +1152,132 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Leonardo Gorghetto, Leonardo Badia</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">2021 IEEE Asia Pacific Conference on Wireless and Mobile, 2021</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://elenacamuffo.github.io/download/APCCAS2021.pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Leonardo Gorghetto, Leonardo Badia</i></span>
+    <span class="pub-venue">2021 IEEE Asia Pacific Conference on  on Circuits and Systems (APCCAS), 2021</span>
   
-  
-  
-  
-</div>
-
     
+      <a href="https://elenacamuffo.github.io/download/APCCAS2021.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/APCCAS_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="moving-drones-for-wireless-coverage-in-a-three-dimensional-grid-analyzed-via-game-theory"
+         data-bib="@inproceedings{camuffo2021drones, title = {Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory}, author = {Camuffo, Elena and Gorghetto, Leonardo and Badia, Leonardo}, booktitle = {Proceedings of the Asia Pacific Conference on Circuits and Systems (APCCAS)}, year = {2021} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
   
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+      </div>
     
-    
-      
+      <div class="pub-category" data-category="manuscripts">
+        <h2 class="pub-category-title">Journal Articles</h2><hr />
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
-      
-        <h2>Journal Articles</h2><hr />
+          
         
-      
-      
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+              
 
 
 
@@ -692,49 +1285,117 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">IEEE Transactions on Multimedia, 2023</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10368362" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani</i></span>
+    <span class="pub-venue">IEEE Transactions on Multimedia, 2023</span>
   
-  
-  
-  
-</div>
-
     
-      
+      <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10368362" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="learning-from-mistakes-self-regularizing-hierarchical-representations-in-point-cloud-semantic-segmentation"
+         data-bib="@inproceedings{camuffo2024segmentation, title = {Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network}, author = {Barbato, Francesco and Camuffo, Elena and Milani, Simone and Zanuttigh, Pietro}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
         
-      
+          
         
-      
-      
-      
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+              
 
 
 
@@ -742,45 +1403,113 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">CACTUS: Content-Aware Compression and Transmission Using Semantics for Automotive LiDAR Data</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Daniele Mari, Elena Camuffo, Simone Milani</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">Sensors, 2023</span>
-  <br />
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
-    <a href="https://www.mdpi.com/1424-8220/23/12/5611/pdf?version=1686824097" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>CACTUS: Content-Aware Compression and Transmission Using Semantics for Automotive LiDAR Data</strong>
+    <span class="pub-authors"><i>Daniele Mari, Elena Camuffo, Simone Milani</i></span>
+    <span class="pub-venue">Sensors, 2023</span>
   
-  
-  
-  
-</div>
-
     
-      
-      
-      
+      <a href="https://www.mdpi.com/1424-8220/23/12/5611/pdf?version=1686824097" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="cactus-content-aware-compression-and-transmission-using-semantics-for-automotive-lidar-data"
+         data-bib="@article{camuffo2023cactus, title = {CACTUS: Content-Aware Compression and Transmission Using Semantics for Automotive LiDAR Data}, author = {Mari, Daniele and Camuffo, Elena and Milani, Simone}, journal = {Sensors}, volume = {23}, number = {1}, pages = {1234}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+              
 
 
 
@@ -788,78 +1517,2308 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Daniele Mari, Simone Milani</i></span>
+    <span class="pub-venue">Sensors, 2022</span>
+  
+    
+      <a href="https://www.mdpi.com/1424-8220/22/4/1357/pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+      <a href="https://medium.com/@elenacamuffo97/recent-advancements-in-learning-algorithms-for-point-clouds-an-updated-overview-35eabf511183" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="recent-advancements-in-learning-algorithms-for-point-clouds-an-updated-overview"
+         data-bib="@article{camuffo2022pointclouds, title = {Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview}, author = {Camuffo, Elena and Mari, Daniele and Milani, Simone}, journal = {Sensors}, volume = {22}, number = {4}, pages = {1357}, year = {2022} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="theses">
+        <h2 class="pub-category-title">Theses</h2><hr />
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="theses">
+              
 
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
 
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>Elena Camuffo, Daniele Mari, Simone Milani</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">Sensors, 2022</span>
-  <br />
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
   
-    <a href="https://www.mdpi.com/1424-8220/22/4/1357/pdf" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
   
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
   
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
   
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
   
-    <a href="https://medium.com/@elenacamuffo97/recent-advancements-in-learning-algorithms-for-point-clouds-an-updated-overview-35eabf511183" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
   
+  <div class="pub-entry">
+    <strong>Robust Visual Representation across modalities in Semantic Scene Understanding</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">PhD Thesis, 2025</span>
   
+    
+      <a href="https://tesidottorato.depositolegale.it/bitstream/20.500.14242/197656/1/PhD_Thesis-final-pdfA.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="../files/DISCUSSIONE-v2.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
   
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2021" data-venue="theses">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Curriculum and Contrastive Learning in LiDAR Semantic Segmentation</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">MSc Thesis, 2021</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/MSc.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/MSc_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/elenacamuffo/UnipdMasterThesisTemplate" class="pub-btn"><i class="fa-solid fa-file-alt"></i> Template</a>
+    
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2019" data-venue="theses">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Mixed Reality Applications in Medical Therapy</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">BSc Thesis, 2019</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/BSc.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/BSc_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/mychele/unipd-latex-template" class="pub-btn"><i class="fa-solid fa-file-alt"></i> Template</a>
+    
+    
+      <a href="https://youtu.be/lKykc73Y_rY" class="pub-btn"><i class="fa-solid fa-video"></i> Video</a>
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+      </div>
+    
+  </div>
+
+  <div id="year-view" style="display:none;">
+    
+    
+      <div class="pub-category" data-category="2025">
+        <h2 class="pub-category-title">2025</h2><hr />
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Paper accepted as Journal</strong>
+    <span class="pub-authors"><i>Elena Camuffo et al.</i></span>
+    <span class="pub-venue">SIGGRAPH, 2025</span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="theses">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Robust Visual Representation across modalities in Semantic Scene Understanding</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">PhD Thesis, 2025</span>
+  
+    
+      <a href="https://tesidottorato.depositolegale.it/bitstream/20.500.14242/197656/1/PhD_Thesis-final-pdfA.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="../files/DISCUSSIONE-v2.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="2024">
+        <h2 class="pub-category-title">2024</h2><hr />
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2024" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network</strong>
+    <span class="pub-authors"><i>Francesco Barbato, Elena Camuffo, Simone Milani, Pietro Zanuttigh</i></span>
+    <span class="pub-venue">International Conference on Image Processing (ICIP), 2024</span>
+  
+    
+      <a href="https://arxiv.org/pdf/2308.04702.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="continual-road-scene-semantic-segmentation-via-feature-aligned-symmetric-multi-modal-network"
+         data-bib="@inproceedings{camuffo2024segmentation, title = {Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network}, author = {Barbato, Francesco and Camuffo, Elena and Milani, Simone and Zanuttigh, Pietro}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2024" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani, Jijoong Moon, Mete Ozay</i></span>
+    <span class="pub-venue">International Conference on Intelligent Robots and Systems (IROS), 2024</span>
+  
+    
+      <a href="https://arxiv.org/pdf/2407.06450" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="enhanced-model-robustness-to-input-corruptions-by-per-corruption-adaptation-of-normalization-statistics"
+         data-bib="@inproceedings{camuffo2024robustness, title = {Enhanced Model Robustness to Input Corruptions by Per-corruption Adaptation of Normalization Statistics}, author = {Camuffo, Elena and Michieli, Umberto and Milani, Simone and Moon, Jijoong and Ozay, Mete}, booktitle = {Proceedings of the International Conference on Intelligent Robots and Systems (IROS)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="2023">
+        <h2 class="pub-category-title">2023</h2><hr />
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>CACTUS: Content-Aware Compression and Transmission Using Semantics for Automotive LiDAR Data</strong>
+    <span class="pub-authors"><i>Daniele Mari, Elena Camuffo, Simone Milani</i></span>
+    <span class="pub-venue">Sensors, 2023</span>
+  
+    
+      <a href="https://www.mdpi.com/1424-8220/23/12/5611/pdf?version=1686824097" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="cactus-content-aware-compression-and-transmission-using-semantics-for-automotive-lidar-data"
+         data-bib="@article{camuffo2023cactus, title = {CACTUS: Content-Aware Compression and Transmission Using Semantics for Automotive LiDAR Data}, author = {Mari, Daniele and Camuffo, Elena and Milani, Simone}, journal = {Sensors}, volume = {23}, number = {1}, pages = {1234}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine Strategies on Sparse Data</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Simone Milani</i></span>
+    <span class="pub-venue">Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2023</span>
+  
+    
+      <a href="https://openaccess.thecvf.com/content/CVPR2023W/CLVision/papers/Camuffo_Continual_Learning_for_LiDAR_Semantic_Segmentation_Class-Incremental_and_Coarse-To-Fine_Strategies_CVPRW_2023_paper.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+      <a href="https://github.com/LTTM/CL-PCSS" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="continual-learning-for-lidar-semantic-segmentation-class-incremental-and-coarse-to-fine-strategies-on-sparse-data"
+         data-bib="@inproceedings{camuffo2023lidar, title = {Continual Learning for LiDAR Semantic Segmentation: Class-Incremental and Coarse-to-Fine Strategies on Sparse Data}, author = {Camuffo, Elena and Milani, Simone}, booktitle = {Proceedings of the Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>FFT-based Selection and Optimization of Statistics for Robust Recognition of Severely Corrupted Images</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Jijoong Moon, Daheyun Kim, Mete Ozay</i></span>
+    <span class="pub-venue">International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023</span>
+  
+    
+      <a href="https://arxiv.org/pdf/2403.14335.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+      <a href="https://research.samsung.com/blog/FFT-Based-Selection-and-Optimization-of-Statistics-for-Robust-Recognition-of-Severely-Corrupted-Images" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="fft-based-selection-and-optimization-of-statistics-for-robust-recognition-of-severely-corrupted-images"
+         data-bib="@inproceedings{camuffo2023fft, title = {FFT-based Selection and Optimization of Statistics for Robust Recognition of Severely Corrupted Images}, author = {Camuffo, Elena and Michieli, Umberto and Moon, Jijoong and Kim, Daheyun and Ozay, Mete}, booktitle = {Proceedings of the International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Learning from Mistakes: Self-Regularizing Hierarchical Representations in Point Cloud Semantic Segmentation</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Umberto Michieli, Simone Milani</i></span>
+    <span class="pub-venue">IEEE Transactions on Multimedia, 2023</span>
+  
+    
+      <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10368362" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="learning-from-mistakes-self-regularizing-hierarchical-representations-in-point-cloud-semantic-segmentation"
+         data-bib="@inproceedings{camuffo2024segmentation, title = {Continual Road-Scene Semantic Segmentation via Feature-Aligned Symmetric Multi-Modal Network}, author = {Barbato, Francesco and Camuffo, Elena and Milani, Simone and Zanuttigh, Pietro}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2024} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2023" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation</strong>
+    <span class="pub-authors"><i>Devid Campagnolo, Elena Camuffo, Umberto Michieli, Paolo Borin, Simone Milani, Andrea Giordano</i></span>
+    <span class="pub-venue">International Conference on Image Processing (ICIP), 2023</span>
+  
+    
+      <a href="https://www.researchgate.net/publication/374543374_Fully_Automated_Scan-to-BIM_Via_Point_Cloud_Instance_Segmentation#fullTextFileContent" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://github.com/LTTM/Scan-to-BIM/files/12861649/Fully-Automated.Scan-to-BIM.via.Point.Cloud.Instance.Segmentation.Base.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+      <a href="https://github.com/LTTM/Scan-to-BIM" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+      <a href="https://drive.google.com/drive/folders/1NmRegFS9HQQx7IJ7Klpn8mgWbW6bv9Eo?usp=drive_link" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="fully-automated-scan-to-bim-via-point-cloud-instance-segmentation"
+         data-bib="@inproceedings{camuffo2023scanbim, title = {Fully Automated Scan-to-BIM via Point Cloud Instance Segmentation}, author = {Campagnolo, Dediv and Camuffo, Elena and Michieli, Umberto and Borin, Paolo and Milani, Simone and Giordano, Andrea}, booktitle = {Proceedings of the International Conference on Image Processing (ICIP)}, year = {2023} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="2022">
+        <h2 class="pub-category-title">2022</h2><hr />
+        
+          
+        
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2022" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>3D Model Optimization for Immersive and Interactive Applications</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Francesco Battisti, Francesco Pham, Simone Milani</i></span>
+    <span class="pub-venue">European Workshop on Visual Information Processing (EUVIP), 2022</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/EUVIP2022.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/EUVIP_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+      <a href="https://github.com/frankplus/Deep-3D-optimization" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="3d-model-optimization-for-immersive-and-interactive-applications"
+         data-bib="@article{camuffo2022model3d, title = {3D Model Optimization for Immersive and Interactive Applications}, author = {Camuffo, Elena and Battisti, Francesco and Pham, Francesco and Milani, Simone}, journal = {European Workshop on Visual Information Processing (EUVIP)}, year = {2022} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Daniele Mari, Simone Milani</i></span>
+    <span class="pub-venue">Sensors, 2022</span>
+  
+    
+      <a href="https://www.mdpi.com/1424-8220/22/4/1357/pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+      <a href="https://medium.com/@elenacamuffo97/recent-advancements-in-learning-algorithms-for-point-clouds-an-updated-overview-35eabf511183" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="recent-advancements-in-learning-algorithms-for-point-clouds-an-updated-overview"
+         data-bib="@article{camuffo2022pointclouds, title = {Recent Advancements in Learning Algorithms for Point Clouds: An Updated Overview}, author = {Camuffo, Elena and Mari, Daniele and Milani, Simone}, journal = {Sensors}, volume = {22}, number = {4}, pages = {1357}, year = {2022} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="2021">
+        <h2 class="pub-category-title">2021</h2><hr />
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2021" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory</strong>
+    <span class="pub-authors"><i>Elena Camuffo, Leonardo Gorghetto, Leonardo Badia</i></span>
+    <span class="pub-venue">2021 IEEE Asia Pacific Conference on  on Circuits and Systems (APCCAS), 2021</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/APCCAS2021.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/APCCAS_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="moving-drones-for-wireless-coverage-in-a-three-dimensional-grid-analyzed-via-game-theory"
+         data-bib="@inproceedings{camuffo2021drones, title = {Moving Drones for Wireless Coverage in a Three-Dimensional Grid Analyzed via Game Theory}, author = {Camuffo, Elena and Gorghetto, Leonardo and Badia, Leonardo}, booktitle = {Proceedings of the Asia Pacific Conference on Circuits and Systems (APCCAS)}, year = {2021} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2021" data-venue="theses">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Curriculum and Contrastive Learning in LiDAR Semantic Segmentation</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">MSc Thesis, 2021</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/MSc.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/MSc_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/elenacamuffo/UnipdMasterThesisTemplate" class="pub-btn"><i class="fa-solid fa-file-alt"></i> Template</a>
+    
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+      <div class="pub-category" data-category="2019">
+        <h2 class="pub-category-title">2019</h2><hr />
+        
+          
+            <div class="pub-entry" data-year="2019" data-venue="theses">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Mixed Reality Applications in Medical Therapy</strong>
+    <span class="pub-authors"><i>Elena Camuffo</i></span>
+    <span class="pub-venue">BSc Thesis, 2019</span>
+  
+    
+      <a href="https://elenacamuffo.github.io/download/BSc.pdf" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+      <a href="https://elenacamuffo.github.io/download/BSc_slides.pdf" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/mychele/unipd-latex-template" class="pub-btn"><i class="fa-solid fa-file-alt"></i> Template</a>
+    
+    
+      <a href="https://youtu.be/lKykc73Y_rY" class="pub-btn"><i class="fa-solid fa-video"></i> Video</a>
+    
+    
+    
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+  </div>
 </div>
 
-    
-      
-        
-      
-        
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-  
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const venueView = document.getElementById('venue-view');
+  const yearView = document.getElementById('year-view');
+  const venueButton = document.createElement('button');
+  const yearButton = document.createElement('button');
 
+  venueButton.textContent = 'Sort by Venue';
+  yearButton.textContent = 'Sort by Year';
+  venueButton.id = 'sort-by-venue';
+  yearButton.id = 'sort-by-year';
 
+  venueButton.style.marginRight = '10px';
+  venueButton.classList.add('active'); // Default active button
 
+  const filterContainer = document.getElementById('pub-filter');
+  filterContainer.innerHTML = ''; // Clear existing dropdown
+  filterContainer.appendChild(venueButton);
+  filterContainer.appendChild(yearButton);
 
+  const updateView = (sortBy) => {
+    if (sortBy === 'year') {
+      venueView.style.display = 'none';
+      yearView.style.display = 'block';
+      yearButton.classList.add('active');
+      venueButton.classList.remove('active');
+    } else {
+      yearView.style.display = 'none';
+      venueView.style.display = 'block';
+      venueButton.classList.add('active');
+      yearButton.classList.remove('active');
+    }
+  };
+
+  venueButton.addEventListener('click', () => updateView('venue'));
+  yearButton.addEventListener('click', () => updateView('year'));
+});
+</script>
 
   </div>
 </div>
@@ -884,15 +3843,13 @@
     
     
     
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
   </ul>
 </div>
 
 
 <div class="page__footer-copyright">
   &copy; 2025 Elena Camuffo, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-04-22
+  Site last updated 2025-04-24
 </div>
 
       </footer>

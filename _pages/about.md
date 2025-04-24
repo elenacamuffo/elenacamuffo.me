@@ -1,10 +1,19 @@
 ---
 permalink: /
-title: "About"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+---
+
+<div class="quote-page">
+  <blockquote>
+    “If you can dream it, you can do it.”
+    <footer>— Walt Disney</footer>
+  </blockquote>
+</div>
+
 ---
 
 <!--style>
@@ -73,12 +82,7 @@ social-icons a:hover {
 }
 </style>
 
-<div class="quote-page">
-  <blockquote>
-    “If you can dream it, you can do it.”
-    <footer>— Walt Disney</footer>
-  </blockquote>
-</div>
+# About
 
 I’m **Elena Camuffo**, a researcher in **Computer Vision** and **3D visual understanding**, currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**.  
 My work lies at the intersection of **deep learning**, **3D vision**, and **graphics technologies**, with a strong focus on developing models that can perceive, reconstruct, and interact with the 3D world.
@@ -91,7 +95,7 @@ After earning my **Master’s degree in Computer Engineering** in 2021, I began 
 During my Ph.D., I:
 
 - Published [**over 10 papers**](publications) in international conferences and journals  
-  (*SIGGRAPH, ICASSP, ICIP, IROS, TMM*, etc.)
+(*SIGGRAPH, ICASSP, ICIP, IROS, TMM*, etc.),
 - Spent several months at **Samsung Research UK**, where I co-authored two papers and contributed to a **patent**,
 - Supervised graduate theses, and supported teaching across several **Master’s courses**,
 - Contributed to applied projects in **XR**, **education**, and **interdisciplinary research**.

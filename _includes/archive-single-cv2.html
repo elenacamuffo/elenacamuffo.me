@@ -12,6 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.citation %}
 <style>
   .pub-entry {
   margin-bottom: 0.5em;
@@ -22,4 +23,5 @@
 <div class="pub-entry">
     • <span style="font-size: 0.8rem;" class="pub-cit">{{ post.citation }}</span>
 </div>
+{% endif %}
 

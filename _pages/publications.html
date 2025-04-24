@@ -6,31 +6,119 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">For the full list of my publications please refer to <a href="{{site.author.googlescholar}}">my Google Scholar profile</a><i class="fa-brands fa-google-scholar"></i>.</div>
+  <div class="wordwrap">For the full list of my publications please refer to <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> <i class="fa-brands fa-google-scholar"></i>.</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single-pubs.html %}
+<style>
+#pub-filter {
+  margin: 1rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+#sort-by {
+  padding: 0.6rem 0.6rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #999;
+  color: #333;
+  transition: all 0.2s ease;
+}
+#sort-by:hover, #sort-by:focus {
+  border-color: #999;
+  background: #666;
+  outline: none;
+}
+.pub-category-title {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+</style>
+
+<div id="pub-filter">
+  <label for="sort-by"><strong>Sort by:</strong></label>
+  <select id="sort-by">
+    <option value="venue">Venue type</option>
+    <option value="year">Year (newest first)</option>
+  </select>
+</div>
+
+<div id="pub-list">
+  <div id="venue-view">
+    {% for category in site.publication_category %}
+      <div class="pub-category" data-category="{{ category[0] }}">
+        <h2 class="pub-category-title">{{ category[1].title }}</h2><hr />
+        {% for post in site.publications reversed %}
+          {% if post.category == category[0] %}
+            <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
+              {% include archive-single-pubs.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single-pubs.html %}
-  {% endfor %}
-{% endif %}
+  </div>
 
+  <div id="year-view" style="display:none;">
+    {% assign years = site.publications | map: "year" | uniq | sort_natural | reverse %}
+    {% for year in years %}
+      <div class="pub-category" data-category="{{ year }}">
+        <h2 class="pub-category-title">{{ year }}</h2><hr />
+        {% for post in site.publications %}
+          {% if post.year == year %}
+            <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
+              {% include archive-single-pubs.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const venueView = document.getElementById('venue-view');
+  const yearView = document.getElementById('year-view');
+  const venueButton = document.createElement('button');
+  const yearButton = document.createElement('button');
 
+  venueButton.textContent = 'Sort by Venue';
+  yearButton.textContent = 'Sort by Year';
+  venueButton.id = 'sort-by-venue';
+  yearButton.id = 'sort-by-year';
+
+  venueButton.style.marginRight = '10px';
+  venueButton.classList.add('active'); // Default active button
+
+  const filterContainer = document.getElementById('pub-filter');
+  filterContainer.innerHTML = ''; // Clear existing dropdown
+  filterContainer.appendChild(venueButton);
+  filterContainer.appendChild(yearButton);
+
+  const updateView = (sortBy) => {
+    if (sortBy === 'year') {
+      venueView.style.display = 'none';
+      yearView.style.display = 'block';
+      yearButton.classList.add('active');
+      venueButton.classList.remove('active');
+    } else {
+      yearView.style.display = 'none';
+      venueView.style.display = 'block';
+      venueButton.classList.add('active');
+      yearButton.classList.remove('active');
+    }
+  };
+
+  venueButton.addEventListener('click', () => updateView('venue'));
+  yearButton.addEventListener('click', () => updateView('year'));
+});
+</script>

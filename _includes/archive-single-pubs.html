@@ -14,47 +14,120 @@
 
 <style>
   .pub-entry {
-  margin-bottom: 1.5em;
-  padding-bottom: 0em;
-}
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
 
-.pub-btn {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 4px 8px;
-  font-size: 0.85rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-}
-
-.pub-btn:hover {
-  background: #e0e0e0;
-}
-</style>
-
-<div class="pub-entry">
-    • <strong style="font-size: 0.9rem;">{{ post.title }}</strong><br />
-    <span style="font-size: 0.8rem;" class="pub-authors"><i>{{ post.authors }}</i></span><br />
-    <span style="font-size: 0.8rem;" class="pub-venue">{{ post.venue }}, {{ post.year }}</span>
-  <br />
-  {% if post.paperurl %}
-    <a href="{{ post.paperurl }}" class="pub-btn"><i class="fa-solid fa-file-pdf"></i> PDF</a>
-  {% endif %}
-  {% if post.slidesurl %}
-    <a href="{{ post.slidesurl }}" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
-  {% endif %}
-  {% if post.code %}
-    <a href="{{ post.code }}" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
-  {% endif %}
-  {% if post.blog %}
-    <a href="{{ post.blog }}" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
-  {% endif %}
-  {% if post.dataset %}
-  <a href="{{ post.dataset }}" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
-  {% endif %}
-  {% if post.bib %}
-    <a href="{{ post.bib }}" class="pub-btn"><i class="fa-solid fa-quote-left"></i> Cite</a>
-  {% endif %}
-</div>
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>{{ post.title }}</strong>
+    <span class="pub-authors"><i>{{ post.authors }}</i></span>
+    <span class="pub-venue">{{ post.venue }}, {{ post.year }}</span>
+  
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    {% endif %}
+    {% if post.slidesurl %}
+      <a href="{{ post.slidesurl }}" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
+    {% endif %}
+    {% if post.code %}
+      <a href="{{ post.code }}" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
+    {% endif %}
+    {% if post.blog %}
+      <a href="{{ post.blog }}" class="pub-btn"><i class="fa-solid fa-blog"></i> Blog</a>
+    {% endif %}
+    {% if post.dataset %}
+      <a href="{{ post.dataset }}" class="pub-btn"><i class="fa-solid fa-database"></i> Dataset</a>
+    {% endif %}
+    {% if post.template %}
+      <a href="{{ post.template }}" class="pub-btn"><i class="fa-solid fa-file-alt"></i> Template</a>
+    {% endif %}
+    {% if post.video %}
+      <a href="{{ post.video }}" class="pub-btn"><i class="fa-solid fa-video"></i> Video</a>
+    {% endif %}
+    {% if post.source %}
+      <a href="{{ post.source }}" class="pub-btn"><i class="fa-solid fa-code"></i> Source</a>
+    {% endif %}
+    {% if post.project %}
+      <a href="{{ post.project }}" class="pub-btn"><i class="fa-solid fa-diagram-project"></i> Project</a>
+    {% endif %}
+    {% if post.bib %}
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="{{ post.title | slugify }}"
+         data-bib="{{ post.bib | strip_newlines | xml_escape }}">
+         <i class="fa-solid fa-quote-right"></i></a>
+    {% endif %}
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>

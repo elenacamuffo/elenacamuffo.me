@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Elena Camuffo, PhD"
 title_separator          : "-"
 name                     : &name "Elena Camuffo"
-description              : &description "Research Scientist || 3D Tech Artist"
+description              : &description "AI Research Scientist || 3D Tech Artist"
 url                      : https://elenacamuffo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "elenacamuffo/elenacamuffo.github.io"
@@ -22,9 +22,9 @@ repository               : "elenacamuffo/elenacamuffo.github.io"
 author:
   # Biographic information
   avatar           : "elena.jpeg"
-  name             : "AI Research Scientist - 3D Tech Artist"
+  name             : "AI Research Scientist - Technical 3D Artist"
   pronouns         : # example: "she/her"  
-  bio              : "PostDoc at the University of Padova, leading research in AI and Vision. Freelancer 3D Tech Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology." 
+  bio              : "PostDoc at the University of Padova, leading research in AI and Vision. Freelancer Junior Technical 3D Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology." 
   location         : "Padova, Italy"
   employer         : "University of Padova"
   uri              : # URL
@@ -51,7 +51,7 @@ author:
   # Social media
   artstation       : ellelily97 # Username
   bluesky          : # Username
-  facebook         : # https://www.facebook.com/elena.camuffo # Username
+  facebook         : # elena.camuffo # Username
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
@@ -119,7 +119,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -224,7 +224,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
