@@ -79,6 +79,9 @@
     {% if post.slidesurl %}
       <a href="{{ post.slidesurl }}" class="pub-btn"><i class="fa-solid fa-display"></i> Slides</a>
     {% endif %}
+    {% if post.webpage %}
+      <a href="{{ post.webpage }}" class="pub-btn"><i class="fa-solid fa-globe"></i> Webpage</a>
+    {% endif %}
     {% if post.code %}
       <a href="{{ post.code }}" class="pub-btn"><i class="fa-brands fa-github"></i> Code</a>
     {% endif %}

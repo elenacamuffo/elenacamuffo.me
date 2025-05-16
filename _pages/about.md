@@ -82,7 +82,7 @@ social-icons a:hover {
 }
 </style>
 
-# About
+# Too technical to be an artist. Too creative to be an engineer. I chose to be a Researcher in Graphics.
 
 I’m **Elena Camuffo**, a researcher in **Computer Vision** and **3D visual understanding**, currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**.  
 My work lies at the intersection of **deep learning**, **3D vision**, and **graphics technologies**, with a strong focus on developing models that can perceive, reconstruct, and interact with the 3D world.

@@ -1,13 +1,20 @@
 ---
-title: "Paper accepted as Journal"
-authors: Elena Camuffo et al.
+title: "Claycode: Stylable and Deformable 2D Scannable Codes"
+authors: Marco Maida, Alberto Crescini, Marco Perronet, Elena Camuffo
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/2025-claycode
-excerpt: #'This paper introduces a method to improve model robustness against input corruptions by adapting normalization statistics for each specific corruption type.'
+excerpt: This paper proposes a novel 2D scannable code with improved personalizability.
 year: 2025
-venue: 'SIGGRAPH'
-slidesurl: #'http://academicpages.github.io/files/slides_enhanced_model_robustness.pdf'
-paperurl: #'http://academicpages.github.io/files/paper_enhanced_model_robustness.pdf'
-citation: Paper accepted as Journal at SIGGRAPH 2025.
+venue: 'Transactions on Graphics (TOG)'
+webpage: 'https://www.claycode.io'
+code: #
+paperurl: 'https://arxiv.org/pdf/2505.08666'
+citation: 'Maida M., Crescini A., Perronet M, Camuffo E., "Claycode: Stylable and Deformable 2D Scannable Codes", Transactions on Graphics (TOG), 2025.'
+bib: "@article{camuffo2025claycode,
+    title={Claycode: Stylable and Deformable 2D Scannable Codes},
+    author={Maida, M. and Crescini, A. and Perronet, M. and Camuffo, E.},
+    journal={Transactions on Graphics (TOG)},
+    year={2025}
+}"
 ---

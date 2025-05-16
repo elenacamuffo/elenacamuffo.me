@@ -84,6 +84,12 @@
       {% endif %}      
 
       <!-- Font Awesome icons / Social media -->
+      {% if author.80levels %}
+      <li><a href="{{ author.80levels }}"><i class="fab fa-fw fa-link icon-pad-right" aria-hidden="true"></i>80 Level</a></li>
+      {% endif %}
+      {% if author.80levels %}
+      <li><a href="{{ author.therookies }}"><i class="fab fa-fw fa-r icon-pad-right" aria-hidden="true"></i>The Rookies</a></li>
+      {% endif %}
       {% if author.artstation %}
         <li><a href="https:/artstation.com/{{ author.artstation }}"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>ArtStation</a></li>
       {% endif %}

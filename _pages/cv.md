@@ -21,21 +21,12 @@ redirect_from:
     --accent-color: #bbbbbb;
   }
 }
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-.cv-section {
-  margin-top: 0.8 * var(--section-spacing);
-  margin-bottom: var(--section-spacing);
-}
+
 .cv-section h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.2rem;
   margin-bottom: 1rem;
-  color: var(--accent-color);
 }
 .cv-entry {
   display: flex;
@@ -168,6 +159,7 @@ Research Scientist, specializing in 3D Computer Vision, VR/AR, and Multimodal Sc
 <div class="cv-section">
   <h2>Awards</h2>
   <ul>
+    <li><strong>Video selected for Computer Animation Festival (CAF) Teaser</strong>, SIGGRAPH, Vancouver, 2025</li>
     <li><strong>Best Student Presentation</strong>, APCCAS conference, Taiwan, 2021</li>
     <li><strong>Scholarship - Best Student Award</strong>, Seasonal School AIRONE, Scuola Superiore S.Anna, Pisa, Italy, 2021</li>
   </ul>
