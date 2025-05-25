@@ -14,70 +14,69 @@
 
 <style>
   .prj-entry {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-top: 1em;
+    text-align: left;
+    margin-top: 2em;
     margin-bottom: 2em;
   }
-  
-  .profile-left {
-    flex: 0 0 120px;
-    text-align: center;
-  }
-  
+
   .profile-pic {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
   }
-  
+
+  .profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons-custom {
+    margin-top: 1rem;
+  }
+
   .social-icons-custom a {
-    font-size: 1.2rem;
-    margin: 0 6px;
+    font-size: 1.5rem;
+    margin: 0 10px;
     color: #555;
     text-decoration: none;
   }
-  
+
   .social-icons-custom a:hover {
     color: #000;
   }
-  
-  .profile-right {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .profile-right p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  </style>
-  
-  <div class="prj-entry">
-    <div class="profile-left">
-      <img src="/images/bio-photo.jpg" class="profile-pic" alt="Elena Camuffo">
-  
-      <div class="social-icons-custom">
-        <a href="https://github.com/elenacamuffo" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://scholar.google.com/citations?user=XXXXX" target="_blank"><i class="ai ai-google-scholar"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
+</style>
+<div class="prj-entry" style="display: flex; align-items: center; gap: 20px;">
+  {% if post.embed %}
+    <div style="width: 1200px; height: 200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+      {{ post.embed | replace: '<iframe', '<iframe style="width: 100%; height: 100%; border: none;"' }}
     </div>
-  
-    <div class="profile-right">
-      <p>
-        <strong>{{ post.title }}</strong><br />
-        <span style="font-size: 0.9rem;" class="pub-desc"><i>{{ post.desc }}</i></span>
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+  {% else %}
+    <img src="{{ post.image }}" alt="Project Image" class="profile-pic" />
+  {% endif %}
+  <div>
+    <p class="profile-title">{{ post.title }}</p>
+    <p class="profile-desc"><i>{{ post.desc }}</i></p>
+    <div class="social-icons-custom">
+      {% if post.github %}
+        <a href="{{ post.github }}" target="_blank"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if post.webpage %}
+        <a href="{{ post.webpage }}" target="_blank"> <i class="fas fa-globe"></i></a>
+        {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank"><i class="fas fa-file-pdf"></i></a>
+      {% endif %}
     </div>
   </div>
+</div>

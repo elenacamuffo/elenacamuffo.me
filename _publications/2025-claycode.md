@@ -10,7 +10,7 @@ venue: 'Transactions on Graphics (TOG)'
 webpage: 'https://www.claycode.io'
 code: #
 paperurl: 'https://arxiv.org/pdf/2505.08666'
-citation: 'Maida M., Crescini A., Perronet M, Camuffo E., "Claycode: Stylable and Deformable 2D Scannable Codes", Transactions on Graphics (TOG), 2025.'
+citation: 'Maida M., Crescini A., Perronet M, & Camuffo E., "Claycode: Stylable and Deformable 2D Scannable Codes", <i>Transactions on Graphics (TOG)</i>, 2025. [Oral presentation at SIGGRAPH 2025, video selected for CAF Teaser].'
 bib: "@article{camuffo2025claycode,
     title={Claycode: Stylable and Deformable 2D Scannable Codes},
     author={Maida, M. and Crescini, A. and Perronet, M. and Camuffo, E.},

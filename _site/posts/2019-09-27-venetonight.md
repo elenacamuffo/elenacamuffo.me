@@ -19,7 +19,7 @@
 
 
 
-<title>Blog Post number 2 - Elena Camuffo, PhD</title>
+<title>VenetoNight, 2019 - Elena Camuffo, PhD</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Elena Camuffo, PhD">
-<meta property="og:title" content="Blog Post number 2">
+<meta property="og:title" content="VenetoNight, 2019">
 
 
-  <link rel="canonical" href="http://localhost:4000/posts/2013/08/blog-post-2/">
-  <meta property="og:url" content="http://localhost:4000/posts/2013/08/blog-post-2/">
+  <link rel="canonical" href="http://localhost:4000/posts/2019-09-27-venetonight.md">
+  <meta property="og:url" content="http://localhost:4000/posts/2019-09-27-venetonight.md">
 
 
 
-  <meta property="og:description" name="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+  <meta property="og:description" name="description" content="VenetoNight 2019 was an incredible event celebrating science, research, and innovation. Held on September 27, it brought together researchers, students, and the public to explore the fascinating world of scientific discovery.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2013-08-14T00:00:00+00:00">
+  <meta property="article:published_time" content="2019-09-27T00:00:00+00:00">
 
 
 
@@ -149,7 +149,10 @@
             <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">🎓 Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">📚 Teaching</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">📚 Academia</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">🛠️ Projects</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">🎨 Portfolio</a></li>
@@ -183,14 +186,14 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI Research Scientist - Technical 3D Artist">
+    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="Researcher & Tech Artist">
     
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">AI Research Scientist - Technical 3D Artist</h3>
+    <h3 class="author__name">Researcher & Tech Artist</h3>
     
-    <p class="author__bio">PostDoc at the University of Padova, leading research in AI and Vision. Freelancer Junior Technical 3D Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology.</p>
+    <p class="author__bio">PostDoc Researcher at Unipd. Learning to be a Technical Artist.  Creative and passionate about blending art and technology.</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -285,15 +288,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Blog Post number 2">
-    <meta itemprop="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
-    <meta itemprop="datePublished" content="August 14, 2013">
+    <meta itemprop="headline" content="VenetoNight, 2019">
+    <meta itemprop="description" content="VenetoNight 2019 was an incredible event celebrating science, research, and innovation. Held on September 27, it brought together researchers, students, and the public to explore the fascinating world of scientific discovery.">
+    <meta itemprop="datePublished" content="September 27, 2019">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Blog Post number 2
+          <h1 class="page__title" itemprop="headline">VenetoNight, 2019
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -307,19 +310,19 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00+00:00">August 14, 2013</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2019-09-27T00:00:00+00:00">September 27, 2019</time></p>
             
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+        <p>VenetoNight 2019 was an incredible event celebrating science, research, and innovation. Held on September 27, it brought together researchers, students, and the public to explore the fascinating world of scientific discovery.</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<p>Highlights of the event included interactive workshops, engaging talks, and hands-on experiments designed to inspire curiosity and learning. Participants had the opportunity to meet scientists, ask questions, and experience the excitement of research up close.</p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<p>VenetoNight is part of the European Researchers’ Night initiative, which aims to bridge the gap between science and society. It’s a night dedicated to showcasing the impact of research on our daily lives and encouraging young minds to pursue careers in science.</p>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>
+<p>Join us in celebrating the spirit of discovery and innovation at VenetoNight!</p>
 
 
         
@@ -347,15 +350,15 @@
     
       
       
-      <a href="http://localhost:4000/tags/#category1" class="page__taxonomy-item" rel="tag">category1</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#events" class="page__taxonomy-item" rel="tag">events</a><span class="sep">, </span>
     
       
       
-      <a href="http://localhost:4000/tags/#category2" class="page__taxonomy-item" rel="tag">category2</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#science" class="page__taxonomy-item" rel="tag">science</a><span class="sep">, </span>
     
       
       
-      <a href="http://localhost:4000/tags/#cool-posts" class="page__taxonomy-item" rel="tag">cool posts</a>
+      <a href="http://localhost:4000/tags/#venetonight" class="page__taxonomy-item" rel="tag">VenetoNight</a>
     
     </span>
   </p>
@@ -372,11 +375,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://x.com/intent/post?text=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+  <a href="https://x.com/intent/post?text=http://localhost:4000/posts/2019-09-27-venetonight.md" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2019-09-27-venetonight.md" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2013/08/blog-post-2/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2019-09-27-venetonight.md" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -385,11 +388,10 @@
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/posts/2012/08/blog-post-1/" class="pagination--pager" title="Blog Post number 1
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="http://localhost:4000/posts/2014/08/blog-post-3/" class="pagination--pager" title="Blog Post number 3
+      <a href="http://localhost:4000/posts/2021-11-01-itsgirlsdei/" class="pagination--pager" title="It’s Girls DEI, 2021
 ">Next</a>
     
   </nav>
@@ -419,7 +421,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink">Future Blog Post
+        <a href="http://localhost:4000/posts/2025-08-01-rebelway/" rel="permalink">Houdini for 3D Artists, 2025
 </a>
       
     </h2>
@@ -435,11 +437,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00+00:00">January 01, 2199</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-08-01T00:00:00+00:00">August 01, 2025</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>I am currently attending the “Houdini for 3D Artists” course on Rebelway, and it has been an incredible experience so far. This course dives deep into the powerful features of Houdini, helping artists like me create stunning visual effects and procedural 3D art. Stay tuned as I share my progress and insights from this journey!</p>
 </p>
     
     
@@ -461,7 +463,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4
+        <a href="http://localhost:4000/posts/2025-05-01-claycode/" rel="permalink">ClayCode, 2025
 </a>
       
     </h2>
@@ -477,15 +479,17 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00+00:00">August 14, 2015</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-05-01T00:00:00+00:00">May 01, 2025</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>ClayCode is the intersection of creativity and programming. Just like sculpting clay, coding allows you to shape ideas into functional and beautiful creations. Whether you’re building websites, apps, or tools, the process of coding can be as artistic as it is technical.</p>
 
 </p>
     
     
+    
+      <p><a href=" https://arxiv.org/pdf/2505.08666 ">Download Paper</a></p>
     
 
   </article>
@@ -504,7 +508,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2014/08/blog-post-3/" rel="permalink">Blog Post number 3
+        <a href="http://localhost:4000/posts/2023-10-05-hepic/" rel="permalink">HePIC Dataset, 2023
 </a>
       
     </h2>
@@ -520,15 +524,17 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00+00:00">August 14, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-10-05T00:00:00+00:00">October 05, 2023</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>The HePIC dataset is a comprehensive collection of information about heritage buildings. It aims to document and preserve the architectural and cultural significance of historical structures. The dataset includes detailed metadata, photographs, and structural information, making it a valuable resource for researchers, historians, and conservationists.</p>
 
 </p>
     
     
+    
+      <p><a href=" https://www.researchgate.net/publication/374543374_Fully_Automated_Scan-to-BIM_Via_Point_Cloud_Instance_Segmentation#fullTextFileContent ">Download Paper</a></p>
     
 
   </article>
@@ -547,7 +553,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2012/08/blog-post-1/" rel="permalink">Blog Post number 1
+        <a href="http://localhost:4000/posts/2021-11-01-itsgirlsdei/" rel="permalink">It’s Girls DEI, 2021
 </a>
       
     </h2>
@@ -563,12 +569,11 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00+00:00">August 14, 2012</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-11-01T00:00:00+00:00">November 01, 2021</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-
+    <p class="archive__item-excerpt" itemprop="description"><p>I recently uploaded a new video on my YouTube channel titled “It’s Girls Dei.” In this video, I share some exciting moments and insights about what makes this day so special. If you haven’t watched it yet, make sure to check it out and let me know your thoughts in the comments!</p>
 </p>
     
     
@@ -609,7 +614,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 Elena Camuffo, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-16
+  Site last updated 2025-05-25
 </div>
 
       </footer>

@@ -1,0 +1,83 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<style>
+  .prj-entry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .profile-left {
+    flex: 0 0 120px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .social-icons-custom a {
+    font-size: 1.2rem;
+    margin: 0 6px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .social-icons-custom a:hover {
+    color: #000;
+  }
+  
+  .profile-right {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .profile-right p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  </style>
+  
+  <div class="prj-entry">
+    <div class="profile-left">
+      <img src="/images/bio-photo.jpg" class="profile-pic" alt="Elena Camuffo">
+  
+      <div class="social-icons-custom">
+        <a href="https://github.com/elenacamuffo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=XXXXX" target="_blank"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+    <div class="profile-right">
+      <p>
+        <strong>{{ post.title }}</strong><br />
+        <span style="font-size: 0.9rem;" class="pub-desc"><i>{{ post.desc }}</i></span>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>

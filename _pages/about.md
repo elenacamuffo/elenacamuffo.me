@@ -82,22 +82,27 @@ social-icons a:hover {
 }
 </style>
 
-# Too technical to be an artist. Too creative to be an engineer. I chose to be a Researcher in Graphics.
+# Too technical to be artists, too creative to be engineers. That's the curse of researchers in graphics and TAs.
 
-I’m **Elena Camuffo**, a researcher in **Computer Vision** and **3D visual understanding**, currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**.  
-My work lies at the intersection of **deep learning**, **3D vision**, and **graphics technologies**, with a strong focus on developing models that can perceive, reconstruct, and interact with the 3D world.
+
+---
+
+Hello! My name is **Elena**, and I am a computer graphics enthusiast.
+
+I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **Computer Vision**, particularly on **foundational deep learning** and **3D Gaussian splatting**.
+Parallely, I am studying **Technical Art** attending a [**Houdini**](projects) course.
 
 ---
 
 ### 🎓 Research & Academic Path
 
-After earning my **Master’s degree in Computer Engineering** in 2021, I began a **Ph.D. in Information Engineering** at the University of Padova, where I focused on **multi-modal learning strategies for scene understanding**.  
+After earning my **M.Sc. in TLC Engineering** in 2021, I did a **Ph.D. in Information Engineering** at the University of Padova, where I focused on **visual representations for scene understanding**.
 During my Ph.D., I:
 
 - Published [**over 10 papers**](publications) in international conferences and journals  
 (*SIGGRAPH, ICASSP, ICIP, IROS, TMM*, etc.),
 - Spent several months at **Samsung Research UK**, where I co-authored two papers and contributed to a **patent**,
-- Supervised graduate theses, and supported teaching across several **Master’s courses**,
+- Supervised graduate theses, and supported teaching across several [**Master’s courses**](publications),
 - Contributed to applied projects in **XR**, **education**, and **interdisciplinary research**.
 
 ---
@@ -111,7 +116,7 @@ In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), wh
 
 ### 🚀 Vision & Future Goals
 
-I see myself at the intersection of **research**, **creative technology**, and **education**.  
+I see myself at the intersection of **research**, **creative technologies**, and **education**.  
 I’m passionate about building systems that can **perceive and interact** with the world — but also about designing **intuitive, expressive experiences** that make complex technologies more accessible.  
 I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**.
 

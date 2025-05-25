@@ -144,7 +144,10 @@
             <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">🎓 Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">📚 Teaching</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">📚 Academia</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">🛠️ Projects</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">🎨 Portfolio</a></li>
@@ -176,14 +179,14 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI Research Scientist - Technical 3D Artist">
+    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="Researcher & Tech Artist">
     
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">AI Research Scientist - Technical 3D Artist</h3>
+    <h3 class="author__name">Researcher & Tech Artist</h3>
     
-    <p class="author__bio">PostDoc at the University of Padova, leading research in AI and Vision. Freelancer Junior Technical 3D Artist experimenting with Maya, Unreal and Houdini. Creative and passionate about blending art and technology.</p>
+    <p class="author__bio">PostDoc Researcher at Unipd. Learning to be a Technical Artist.  Creative and passionate about blending art and technology.</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -334,7 +337,235 @@
         <h2 class="pub-category-title">Conference Papers</h2><hr />
         
           
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>SAGE: Semantic-Driven Adaptive Gaussian Splatting in Extended Reality</strong>
+    <span class="pub-authors"><i>Marco Maida, Alberto Crescini, Marco Perronet, Elena Camuffo</i></span>
+    <span class="pub-venue">EUSIPCO, 2025</span>
+  
+    
+      <a href=" https://arxiv.org/pdf/2503.16747" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="sage-semantic-driven-adaptive-gaussian-splatting-in-extended-reality"
+         data-bib="@article{schiavo2025sage, title={SAGE: Semantic-Driven Adaptive Gaussian Splatting in Extended Reality}, author={Schiavo, C. and Camuffo, E. and Badia, L. and Milani, S.}, journal={EUSIPCO}, year={2025} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
         
+          
+        
+          
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Age of Information for Quantum Communication Channels with Monogamy of Entanglement</strong>
+    <span class="pub-authors"><i>Aygun Jabrayilova, Elena Camuffo, Laura Crosara, Leonardo Badia</i></span>
+    <span class="pub-venue">MeditCOM, 2025</span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="age-of-information-for-quantum-communication-channels-with-monogamy-of-entanglement"
+         data-bib="@article{jabrayilova2025age, title={Age of Information for Quantum Communication Channels with Monogamy of Entanglement}, author={Aygun Jabrayilova and Elena Camuffo and Laura Crosara and Leonardo Badia}, journal={MeditCOM}, year={2025} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
           
         
           
@@ -1176,6 +1407,8 @@
           
         
           
+        
+          
             <div class="pub-entry" data-year="2025" data-venue="manuscripts">
               
 
@@ -1290,6 +1523,8 @@
   });
   </script>
             </div>
+          
+        
           
         
           
@@ -1663,6 +1898,8 @@
         <h2 class="pub-category-title">Theses</h2><hr />
         
           
+        
+          
             <div class="pub-entry" data-year="2025" data-venue="theses">
               
 
@@ -1772,6 +2009,8 @@
   });
   </script>
             </div>
+          
+        
           
         
           
@@ -2061,6 +2300,119 @@
           
         
           
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>Age of Information for Quantum Communication Channels with Monogamy of Entanglement</strong>
+    <span class="pub-authors"><i>Aygun Jabrayilova, Elena Camuffo, Laura Crosara, Leonardo Badia</i></span>
+    <span class="pub-venue">MeditCOM, 2025</span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="age-of-information-for-quantum-communication-channels-with-monogamy-of-entanglement"
+         data-bib="@article{jabrayilova2025age, title={Age of Information for Quantum Communication Channels with Monogamy of Entanglement}, author={Aygun Jabrayilova and Elena Camuffo and Laura Crosara and Leonardo Badia}, journal={MeditCOM}, year={2025} }">
+         <i class="fa-solid fa-quote-right"></i></a>
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
             <div class="pub-entry" data-year="2025" data-venue="manuscripts">
               
 
@@ -2260,6 +2612,121 @@
     
     
     
+    
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bib-download').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const title = btn.dataset.title || 'citation';
+        const content = btn.dataset.bib
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.bib`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    });
+  });
+  </script>
+            </div>
+          
+        
+          
+            <div class="pub-entry" data-year="2025" data-venue="conferences">
+              
+
+
+
+
+
+<style>
+  .pub-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .pub-entry strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .pub-btn {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+
+  .pub-btn-pdf {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .pub-btn:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+  
+  .pub-btn i {
+    margin-right: 5px;
+    color: #666;
+  }
+  </style>
+  
+  <div class="pub-entry">
+    <strong>SAGE: Semantic-Driven Adaptive Gaussian Splatting in Extended Reality</strong>
+    <span class="pub-authors"><i>Marco Maida, Alberto Crescini, Marco Perronet, Elena Camuffo</i></span>
+    <span class="pub-venue">EUSIPCO, 2025</span>
+  
+    
+      <a href=" https://arxiv.org/pdf/2503.16747" class="pub-btn-pdf"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="#" class="pub-btn bib-download" tooltip="Download BibTeX"
+         data-title="sage-semantic-driven-adaptive-gaussian-splatting-in-extended-reality"
+         data-bib="@article{schiavo2025sage, title={SAGE: Semantic-Driven Adaptive Gaussian Splatting in Extended Reality}, author={Schiavo, C. and Camuffo, E. and Badia, L. and Milani, S.}, journal={EUSIPCO}, year={2025} }">
+         <i class="fa-solid fa-quote-right"></i></a>
     
   </div>
   
@@ -2542,6 +3009,10 @@
   });
   </script>
             </div>
+          
+        
+          
+        
           
         
           
@@ -3156,6 +3627,10 @@
         
           
         
+          
+        
+          
+        
       </div>
     
       <div class="pub-category" data-category="2022">
@@ -3401,6 +3876,10 @@
   });
   </script>
             </div>
+          
+        
+          
+        
           
         
           
@@ -3681,6 +4160,10 @@
         
           
         
+          
+        
+          
+        
       </div>
     
       <div class="pub-category" data-category="2019">
@@ -3828,6 +4311,10 @@
         
           
         
+          
+        
+          
+        
       </div>
     
   </div>
@@ -3901,7 +4388,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="page__footer-copyright">
   &copy; 2025 Elena Camuffo, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-16
+  Site last updated 2025-05-25
 </div>
 
       </footer>
