@@ -84,7 +84,7 @@ Research Scientist, specializing in 3D Computer Vision, VR/AR, and Multimodal Sc
     <div class="cv-entry-content">
       <p>University of Padova, Padova, Italy</p>
       <ul>
-        <li><strong>Ph.D. in Information Engineering</strong> (2021 – 2024)<br>Advisor: Prof. Simone Milani<br>Research area: Multimodal Scene Understanding and Representation Learning.<br>Published 10 papers in International Journals and Conferences.</li>
+        <li><strong>Ph.D. in Information Engineering</strong> (2021 – 2024)<br>Advisor: Prof. Simone Milani<br>Thesis: "Robust Visual Representation across Modalities in Semantic Scene Understanding".<br>Published 10+ papers in International Journals and Conferences.</li>
         <li><strong>M.Sc. in Internet and Multimedia Engineering</strong> (2019 – 2021)<br>GPA: 30/30 - Grade: 110/110 with Honors.<br>Thesis: “Curriculum Learning for LiDAR Semantic Segmentation”.</li>
         <li><strong>B.Sc. in Information Engineering</strong> (2016 – 2019)<br>Thesis: “Mixed Reality Applications in Medical Therapy” - MR application for HoloLens in collaboration with Dreamship Studios s.r.l.</li>
       </ul>
@@ -94,9 +94,9 @@ Research Scientist, specializing in 3D Computer Vision, VR/AR, and Multimodal Sc
   <div class="cv-entry">
     <img src="/images/cv/bigrock.jpeg" class="profile-pic" alt="bigrock">
     <div class="cv-entry-content">
-      <p>BigRock Institute of Magic Technologies, Treviso, Italy</p>
+      <p>BigRock Institute of Magic Technologies, Treviso, Italy </p>
       <ul>
-        <li><strong>Master in Computer Graphics</strong> (2024 – 2025)<br>Professional training in technical and artistic skills for 3D Computer Graphics.<br>Certified in Autodesk Maya.</li>
+        <li><strong>Master in Computer Graphics</strong> (2024 – 2025)<br>Professional training in technical and artistic skills for 3D Computer Graphics.<br>Certified in Autodesk Maya. <a href="../portfolio">[portfolio]</a></li>
       </ul>
     </div>
   </div>
@@ -175,5 +175,5 @@ Research Scientist, specializing in 3D Computer Vision, VR/AR, and Multimodal Sc
 </div>
 
 <div class="download-cv">
-  <a href="/files/ElenaCamuffo_CV.pdf" download>Download PDF</a>
+  <a href="/files/Elena_Camuffo_CV_0525.pdf" download>Download PDF</a>
 </div>

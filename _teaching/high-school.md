@@ -8,7 +8,7 @@ date: 2023-01-01
 location: #
 ---
 
-This program introduces high school students to the fundamentals of machine learning and computer vision through an engaging mix of theory, hands-on coding, and interactive examples. Delivered as part of a science outreach initiative, it is designed to make AI concepts accessible, fun, and visually intuitive.
+This course was led in high school to introduce the fundamentals of machine learning and computer vision through an engaging mix of theory, hands-on coding, and interactive examples. Delivered as part of a science outreach initiative, it is designed to make AI concepts accessible, fun, and visually intuitive.
 
 ## Topics Covered
 - Overview of Machine Learning: Supervised vs. Unsupervised Learning

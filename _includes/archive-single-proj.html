@@ -77,6 +77,9 @@
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}" target="_blank"><i class="fas fa-file-pdf"></i></a>
       {% endif %}
+      {% if post.youtube %}
+        <a href="{{ post.youtube }}" target="_blank" style="color: red;"><i class="fab fa-youtube"></i></a>
+      {% endif %}
     </div>
   </div>
 </div>

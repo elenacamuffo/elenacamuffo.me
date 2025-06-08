@@ -1,9 +1,9 @@
 ---
 title: "Other Teaching Experiences"
 collection: teaching
-type: "Undergraduate courses, MSc in Internet and Multimedia Engineering"
+type: "Undergraduate courses, M.Sc. in Internet and Multimedia Engineering"
 permalink: /teaching/others
-venue: "University of Padova, Department of Information Engineering"
+venue: "University of Padova"
 date: 2021-01-01
 location: "Padova, Italy"
 ---

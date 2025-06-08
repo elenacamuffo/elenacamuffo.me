@@ -1,14 +1,14 @@
 ---
 title: "3D Vision and Extended Reality"
 collection: teaching
-type: "Undergraduate course, MSc in Internet and Multimedia Engineering"
+type: "Undergraduate course, M.Sc. in Internet and Multimedia Engineering"
 permalink: /teaching/3d-vision-xr
-venue: "University of Padova, Department of Information Engineering"
+venue: "University of Padova"
 date: 2024-01-01
 location: "Padova, Italy"
 ---
 
-This course (taught 2019--2024) provided an introduction to the principles of 3D vision and extended reality (XR), emphasizing practical applications and development using Unity3D. Key topics included 3D reconstruction, virtual environments, interaction techniques and machine learning. \
+This course (taught 2019--2024) provided an introduction to the principles of 3D vision and extended reality (XR), emphasizing practical applications and development using **Unity3D**. Key topics included 3D reconstruction, virtual environments, interaction techniques and machine learning. \
 [GitHub repository](https://github.com/elenacamuffo/3DVisionXRLabs-Unity.git)<i class="fa-brands fa-github"></i>.
 
 ## Topics Covered

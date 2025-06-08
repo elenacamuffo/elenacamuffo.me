@@ -117,7 +117,7 @@ In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), wh
 ### 🚀 Vision & Future Goals
 
 I see myself at the intersection of **research**, **creative technologies**, and **education**.  
-I’m passionate about building systems that can **perceive and interact** with the world — but also about designing **intuitive, expressive experiences** that make complex technologies more accessible.  
-I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**.
+I’m passionate about blending the precision of mathematics with the creativity of digital arts. 
+My goal is to develop systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**.
 
 ---
