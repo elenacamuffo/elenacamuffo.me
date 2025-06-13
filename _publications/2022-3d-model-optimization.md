@@ -8,8 +8,8 @@ excerpt: 'Questo articolo presenta strategie per ottimizzare modelli 3D profondi
 year: 2022
 venue: 'European Workshop on Visual Information Processing (EUVIP)'
 code: https://github.com/frankplus/Deep-3D-optimization
-slidesurl: https://elenacamuffo.github.io/download/EUVIP_slides.pdf
-paperurl: 'https://elenacamuffo.github.io/download/EUVIP2022.pdf'
+slidesurl: files/download/EUVIP_slides.pdf
+paperurl: 'files/download/EUVIP2022.pdf'
 citation: 'Camuffo, E., Battisti, F., Pham, F., & Milani, S. (2022). "3D Model Optimization for Immersive and Interactive Applications." <i>European Workshop on Visual Information Processing (EUVIP)</i>.'
 bib: "@article{camuffo2022model3d,
   title = {3D Model Optimization for Immersive and Interactive Applications},
