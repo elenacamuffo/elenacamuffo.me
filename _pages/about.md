@@ -82,8 +82,9 @@ social-icons a:hover {
 }
 </style>
 
-# Too technical to be artists, too creative to be engineers. That's the curse of researchers in graphics and TAs.
-
+<!-- 
+# Too technical to be an artist, too creative to be an engineer. That's the curse of researchers in graphics and TAs.
+ -->
 
 ---
 
