@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 author_profile: true
+classes: full-width
 redirect_from: 
   - /about/
   - /about.html
@@ -90,8 +91,8 @@ social-icons a:hover {
 
 Hello! My name is **Elena**, and I am a computer graphics enthusiast.
 
-I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **Computer Vision**, particularly on **foundational deep learning** and **3D Gaussian splatting**.
-Parallely, I am studying **Technical Art** attending a [**Houdini**](projects) course.
+I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **Computer Vision**, particularly on **foundational and generative AI** and **3D Gaussian splatting**.
+Parallely, I am studying [**3D Technical Art**](portfolio) with [**Houdini**](projects).
 
 ---
 
@@ -101,17 +102,17 @@ After earning my **M.Sc. in TLC Engineering** in 2021, I did a **Ph.D. in Inform
 During my Ph.D., I:
 
 - Published [**over 10 papers**](publications) in international conferences and journals  
-(*SIGGRAPH, ICASSP, ICIP, IROS, TMM*, etc.),
+(*SIGGRAPH, TOG, TMM, ICASSP, ICIP, IROS*, etc.),
 - Spent several months at **Samsung Research UK**, where I co-authored two papers and contributed to a **patent**,
-- Supervised graduate theses, and supported teaching across several [**Master’s courses**](publications),
-- Contributed to applied projects in **XR**, **education**, and **interdisciplinary research**.
+- Supervised young researchers and master students, and supported teaching across several [**Master’s courses**](teachings),
+- Contributed to applied [projects](projects) in **XR**, **education**, and **interdisciplinary research**.
 
 ---
 
 ### 🎨 Creative Technology & Digital Arts
 
 Alongside my academic work, I’ve always been drawn to the **creative side of technology**.  
-In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), where I honed my skills in **digital art**, **real-time rendering**, and **storytelling**, using tools like **Maya**, **ZBrush**, and **Unreal Engine**.
+In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), where I honed my artistic skills in **digital art**, **real-time rendering**, and **storytelling**, using tools like **Maya**, **ZBrush**, and **Unreal Engine**.
 
 ---
 

@@ -12,9 +12,9 @@ title                    : "Elena Camuffo, PhD"
 title_separator          : "-"
 name                     : &name "Elena Camuffo"
 description              : &description "Computer Graphics Enthusiast | Researcher | Tech Artist | PostDoc at Unipd | Passionate about blending art and technology."
-url                      : https://elenacamuffo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://elenacamuffo.me # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "elenacamuffo/elenacamuffo.github.io"
+repository               : "elenacamuffo/elenacamuffo.me"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,9 +22,9 @@ repository               : "elenacamuffo/elenacamuffo.github.io"
 author:
   # Biographic information
   avatar           : "elena.jpeg"
-  name             : "Computer Graphics Research Scientist" #"Researcher & Tech Artist"
+  name             : "AI & Graphics Research Scientist" #"Researcher & Tech Artist"
   pronouns         : # example: "she/her"  
-  bio              : "PostDoc Researcher at Unipd. Learning to be a Technical Artist. \ Creative and passionate about blending art and technology." 
+  bio              : "PostDoc Researcher at Unipd. Learning to be a Tech Artist. \ Creative and passionate about blending art and technology." 
   location         : "Padova, Italy"
   employer         : "University of Padova"
   uri              : # URL
@@ -69,7 +69,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : https://x.com/ElenaCamuffo # Username for X / Twitter
+  twitter          : ElenaCamuffo # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

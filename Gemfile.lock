@@ -277,7 +277,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
+  jekyll (~> 3.10)
   jekyll-feed
   jekyll-redirect-from
   jekyll-sitemap
