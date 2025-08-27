@@ -5,117 +5,141 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+  /* Tabs CSS-only */
+  .pub-tabs {
+    margin: 1rem 0 .5rem;
+    display: grid;
+    gap: .75rem;
+  }
+  .pub-tabs input[type="radio"] { display: none; }
+  
+  /* Bottoni */
+  .pub-tabs .tab-labels {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+  .pub-tabs label {
+    padding: .5rem .75rem;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.95rem;
+  }
+  #tab-venue:checked + label {
+    background: #333; color: #fff; border-color: #333;
+  }
+  /* Se l’HTML è input,label,input,label, questo selettore prende il secondo label quando #tab-year è checked */
+  #tab-year:checked ~ label[for="tab-year"] {
+    background: #333; color: #fff; border-color: #333;
+  }
+  
+  /* Pannelli */
+  .pub-tabs .tab-content { width: 100%; }
+  .tab-panel { display: none; }
+  #tab-venue:checked ~ .tab-content .panel-venue { display: block; }
+  #tab-year:checked  ~ .tab-content .panel-year  { display: block; }
+  
+  /* Titoli sezioni */
+  .pub-category-title {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const venueView = document.getElementById('venue-view');
+    const yearView = document.getElementById('year-view');
+    const venueButton = document.createElement('button');
+    const yearButton = document.createElement('button');
+  
+    venueButton.textContent = 'Sort by Venue';
+    yearButton.textContent = 'Sort by Year';
+    venueButton.id = 'sort-by-venue';
+    yearButton.id = 'sort-by-year';
+  
+    venueButton.style.marginRight = '10px';
+    venueButton.classList.add('active'); // Default active button
+  
+    const filterContainer = document.getElementById('pub-filter');
+    filterContainer.innerHTML = ''; // Clear existing dropdown
+    filterContainer.appendChild(venueButton);
+    filterContainer.appendChild(yearButton);
+  
+    const updateView = (sortBy) => {
+      if (sortBy === 'year') {
+        venueView.style.display = 'none';
+        yearView.style.display = 'block';
+        yearButton.classList.add('active');
+        venueButton.classList.remove('active');
+      } else {
+        yearView.style.display = 'none';
+        venueView.style.display = 'block';
+        venueButton.classList.add('active');
+        yearButton.classList.remove('active');
+      }
+    };
+  
+    venueButton.addEventListener('click', () => updateView('venue'));
+    yearButton.addEventListener('click', () => updateView('year'));
+  });
+  </script>
+  
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">For the full list of my publications please refer to <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> <i class="fa-brands fa-google-scholar"></i>.</div>
 {% endif %}
 
 {% include base_path %}
-
-<style>
-#pub-filter {
-  margin: 1rem 0 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-}
-#sort-by {
-  padding: 0.6rem 0.6rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  border: 1px solid #666;
-  background: #999;
-  color: #333;
-  transition: all 0.2s ease;
-}
-#sort-by:hover, #sort-by:focus {
-  border-color: #999;
-  background: #666;
-  outline: none;
-}
-.pub-category-title {
-  display: block;
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #222;
-}
-</style>
-
-<div id="pub-filter">
-  <button id="sort-by-venue" class="active">Sort by Venue</button>
-  <button id="sort-by-year">Sort by Year</button>
-</div>
-
-<div id="pub-list">
-  <div id="venue-view">
-    {% for category in site.publication_category %}
-      <div class="pub-category" data-category="{{ category[0] }}">
-        <h2 class="pub-category-title">{{ category[1].title }}</h2><hr />
-        {% for post in site.publications reversed %}
-          {% if post.category == category[0] %}
-            <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
-              {% include archive-single-pubs.html %}
-            </div>
-          {% endif %}
+  
+  <div class="pub-tabs">
+    <!-- ordine: input,label,input,label, poi contenuti -->
+    <input type="radio" id="tab-venue" name="pubsort" checked>
+    <label for="tab-venue">Sort by Venue</label>
+  
+    <input type="radio" id="tab-year" name="pubsort">
+    <label for="tab-year">Sort by Year</label>
+  
+    <div class="tab-content">
+      <!-- VENUE VIEW -->
+      <div class="tab-panel panel-venue" id="venue-view">
+        {% for category in site.publication_category %}
+          <div class="pub-category" data-category="{{ category[0] }}">
+            <h2 class="pub-category-title">{{ category[1].title }}</h2><hr />
+            {% for post in site.publications reversed %}
+              {% if post.category == category[0] %}
+                <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
+                  {% include archive-single-pubs.html %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endfor %}
       </div>
-    {% endfor %}
-  </div>
-
-  <div id="year-view" style="display:none;">
-    {% assign years = site.publications | map: "year" | uniq | sort_natural | reverse %}
-    {% for year in years %}
-      <div class="pub-category" data-category="{{ year }}">
-        <h2 class="pub-category-title">{{ year }}</h2><hr />
-        {% for post in site.publications %}
-          {% if post.year == year %}
-            <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
-              {% include archive-single-pubs.html %}
-            </div>
-          {% endif %}
+  
+      <!-- YEAR VIEW -->
+      <div class="tab-panel panel-year" id="year-view">
+        {% assign years = site.publications | map: "year" | uniq | sort_natural | reverse %}
+        {% for year in years %}
+          <div class="pub-category" data-category="{{ year }}">
+            <h2 class="pub-category-title">{{ year }}</h2><hr />
+            {% for post in site.publications %}
+              {% if post.year == year %}
+                <div class="pub-entry" data-year="{{ post.year }}" data-venue="{{ post.category }}">
+                  {% include archive-single-pubs.html %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const venueView = document.getElementById('venue-view');
-  const yearView = document.getElementById('year-view');
-  const venueButton = document.createElement('button');
-  const yearButton = document.createElement('button');
-
-  venueButton.textContent = 'Sort by Venue';
-  yearButton.textContent = 'Sort by Year';
-  venueButton.id = 'sort-by-venue';
-  yearButton.id = 'sort-by-year';
-
-  venueButton.style.marginRight = '10px';
-  venueButton.classList.add('active'); // Default active button
-
-  const filterContainer = document.getElementById('pub-filter');
-  filterContainer.innerHTML = ''; // Clear existing dropdown
-  filterContainer.appendChild(venueButton);
-  filterContainer.appendChild(yearButton);
-
-  const updateView = (sortBy) => {
-    if (sortBy === 'year') {
-      venueView.style.display = 'none';
-      yearView.style.display = 'block';
-      yearButton.classList.add('active');
-      venueButton.classList.remove('active');
-    } else {
-      yearView.style.display = 'none';
-      venueView.style.display = 'block';
-      venueButton.classList.add('active');
-      yearButton.classList.remove('active');
-    }
-  };
-
-  venueButton.addEventListener('click', () => updateView('venue'));
-  yearButton.addEventListener('click', () => updateView('year'));
-});
-</script>

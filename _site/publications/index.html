@@ -186,7 +186,7 @@
   <div class="author__content">
     <h3 class="author__name">AI & Graphics Researcher</h3>
     
-    <p class="author__bio">PostDoc Researcher at Unipd. Learning to be a Tech Artist.  Creative and passionate about blending art and technology.</p>
+    <p class="author__bio">PostDoc Researcher at Unipd. Learning to be a Tech Artist.   Creative and passionate about blending art and technology.</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -284,58 +284,119 @@
     
       <h1 class="page__title">Publications</h1>
     
-    
+    <style>
+  /* Tabs CSS-only */
+  .pub-tabs {
+    margin: 1rem 0 .5rem;
+    display: grid;
+    gap: .75rem;
+  }
+  .pub-tabs input[type="radio"] { display: none; }
+  
+  /* Bottoni */
+  .pub-tabs .tab-labels {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+  .pub-tabs label {
+    padding: .5rem .75rem;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.95rem;
+  }
+  #tab-venue:checked + label {
+    background: #333; color: #fff; border-color: #333;
+  }
+  /* Se l’HTML è input,label,input,label, questo selettore prende il secondo label quando #tab-year è checked */
+  #tab-year:checked ~ label[for="tab-year"] {
+    background: #333; color: #fff; border-color: #333;
+  }
+  
+  /* Pannelli */
+  .pub-tabs .tab-content { width: 100%; }
+  .tab-panel { display: none; }
+  #tab-venue:checked ~ .tab-content .panel-venue { display: block; }
+  #tab-year:checked  ~ .tab-content .panel-year  { display: block; }
+  
+  /* Titoli sezioni */
+  .pub-category-title {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const venueView = document.getElementById('venue-view');
+    const yearView = document.getElementById('year-view');
+    const venueButton = document.createElement('button');
+    const yearButton = document.createElement('button');
+  
+    venueButton.textContent = 'Sort by Venue';
+    yearButton.textContent = 'Sort by Year';
+    venueButton.id = 'sort-by-venue';
+    yearButton.id = 'sort-by-year';
+  
+    venueButton.style.marginRight = '10px';
+    venueButton.classList.add('active'); // Default active button
+  
+    const filterContainer = document.getElementById('pub-filter');
+    filterContainer.innerHTML = ''; // Clear existing dropdown
+    filterContainer.appendChild(venueButton);
+    filterContainer.appendChild(yearButton);
+  
+    const updateView = (sortBy) => {
+      if (sortBy === 'year') {
+        venueView.style.display = 'none';
+        yearView.style.display = 'block';
+        yearButton.classList.add('active');
+        venueButton.classList.remove('active');
+      } else {
+        yearView.style.display = 'none';
+        venueView.style.display = 'block';
+        venueButton.classList.add('active');
+        yearButton.classList.remove('active');
+      }
+    };
+  
+    venueButton.addEventListener('click', () => updateView('venue'));
+    yearButton.addEventListener('click', () => updateView('year'));
+  });
+  </script>
+  
+
+
   <div class="wordwrap">For the full list of my publications please refer to <a href="https://scholar.google.com/citations?user=Oo8fbq4AAAAJ&hl=it">my Google Scholar profile</a> <i class="fa-brands fa-google-scholar"></i>.</div>
 
 
 
-
-<style>
-#pub-filter {
-  margin: 1rem 0 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-}
-#sort-by {
-  padding: 0.6rem 0.6rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  border: 1px solid #666;
-  background: #999;
-  color: #333;
-  transition: all 0.2s ease;
-}
-#sort-by:hover, #sort-by:focus {
-  border-color: #999;
-  background: #666;
-  outline: none;
-}
-.pub-category-title {
-  display: block;
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #222;
-}
-</style>
-
-<div id="pub-filter">
-  <button id="sort-by-venue" class="active">Sort by Venue</button>
-  <button id="sort-by-year">Sort by Year</button>
-</div>
-
-<div id="pub-list">
-  <div id="venue-view">
-    
-      <div class="pub-category" data-category="conferences">
-        <h2 class="pub-category-title">Conference Papers</h2><hr />
+  
+  <div class="pub-tabs">
+    <!-- ordine: input,label,input,label, poi contenuti -->
+    <input type="radio" id="tab-venue" name="pubsort" checked>
+    <label for="tab-venue">Sort by Venue</label>
+  
+    <input type="radio" id="tab-year" name="pubsort">
+    <label for="tab-year">Sort by Year</label>
+  
+    <div class="tab-content">
+      <!-- VENUE VIEW -->
+      <div class="tab-panel panel-venue" id="venue-view">
         
-          
-            <div class="pub-entry" data-year="2025" data-venue="conferences">
+          <div class="pub-category" data-category="conferences">
+            <h2 class="pub-category-title">Conference Papers</h2><hr />
+            
               
+                <div class="pub-entry" data-year="2025" data-venue="conferences">
+                  
 
 
 
@@ -445,16 +506,16 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="conferences">
+                  
 
 
 
@@ -562,12 +623,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2024" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2024" data-venue="conferences">
+                  
 
 
 
@@ -677,12 +738,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2024" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2024" data-venue="conferences">
+                  
 
 
 
@@ -792,12 +853,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -913,14 +974,14 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -1032,12 +1093,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -1149,16 +1210,16 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2022" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2022" data-venue="conferences">
+                  
 
 
 
@@ -1272,14 +1333,14 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2021" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2021" data-venue="conferences">
+                  
 
 
 
@@ -1391,23 +1452,23 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="manuscripts">
-        <h2 class="pub-category-title">Journal Articles</h2><hr />
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="manuscripts">
+                </div>
               
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="manuscripts">
+            <h2 class="pub-category-title">Journal Articles</h2><hr />
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="manuscripts">
+                  
 
 
 
@@ -1523,20 +1584,20 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                  
 
 
 
@@ -1646,16 +1707,16 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                </div>
               
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                  
 
 
 
@@ -1765,12 +1826,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+                  
 
 
 
@@ -1882,27 +1943,27 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="theses">
-        <h2 class="pub-category-title">Theses</h2><hr />
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="theses">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="theses">
+            <h2 class="pub-category-title">Theses</h2><hr />
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="theses">
+                  
 
 
 
@@ -2009,34 +2070,34 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2021" data-venue="theses">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2021" data-venue="theses">
+                  
 
 
 
@@ -2145,14 +2206,14 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2019" data-venue="theses">
+                </div>
               
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2019" data-venue="theses">
+                  
 
 
 
@@ -2263,46 +2324,47 @@
     });
   });
   </script>
-            </div>
-          
+                </div>
+              
+            
+          </div>
         
       </div>
-    
-  </div>
-
-  <div id="year-view" style="display:none;">
-    
-    
-      <div class="pub-category" data-category="2025">
-        <h2 class="pub-category-title">2025</h2><hr />
+  
+      <!-- YEAR VIEW -->
+      <div class="tab-panel panel-year" id="year-view">
         
-          
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="conferences">
+          <div class="pub-category" data-category="2025">
+            <h2 class="pub-category-title">2025</h2><hr />
+            
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="conferences">
+                  
 
 
 
@@ -2410,12 +2472,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="manuscripts">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="manuscripts">
+                  
 
 
 
@@ -2531,12 +2593,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="theses">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="theses">
+                  
 
 
 
@@ -2643,12 +2705,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2025" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2025" data-venue="conferences">
+                  
 
 
 
@@ -2758,37 +2820,37 @@
     });
   });
   </script>
-            </div>
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="2024">
-        <h2 class="pub-category-title">2024</h2><hr />
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2024" data-venue="conferences">
+                </div>
               
+            
+          </div>
+        
+          <div class="pub-category" data-category="2024">
+            <h2 class="pub-category-title">2024</h2><hr />
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2024" data-venue="conferences">
+                  
 
 
 
@@ -2898,12 +2960,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2024" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2024" data-venue="conferences">
+                  
 
 
 
@@ -3013,35 +3075,35 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="2023">
-        <h2 class="pub-category-title">2023</h2><hr />
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="2023">
+            <h2 class="pub-category-title">2023</h2><hr />
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                  
 
 
 
@@ -3151,12 +3213,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -3268,12 +3330,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -3385,12 +3447,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="manuscripts">
+                  
 
 
 
@@ -3500,12 +3562,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2023" data-venue="conferences">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2023" data-venue="conferences">
+                  
 
 
 
@@ -3621,35 +3683,35 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="2022">
-        <h2 class="pub-category-title">2022</h2><hr />
-        
-          
-        
-          
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2022" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="2022">
+            <h2 class="pub-category-title">2022</h2><hr />
+            
+              
+            
+              
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2022" data-venue="conferences">
+                  
 
 
 
@@ -3763,12 +3825,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2022" data-venue="manuscripts">
+                  
 
 
 
@@ -3880,41 +3942,41 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="2021">
-        <h2 class="pub-category-title">2021</h2><hr />
-        
-          
-        
-          
-            <div class="pub-entry" data-year="2021" data-venue="conferences">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="2021">
+            <h2 class="pub-category-title">2021</h2><hr />
+            
+              
+            
+              
+                <div class="pub-entry" data-year="2021" data-venue="conferences">
+                  
 
 
 
@@ -4026,12 +4088,12 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-            <div class="pub-entry" data-year="2021" data-venue="theses">
+                </div>
               
+            
+              
+                <div class="pub-entry" data-year="2021" data-venue="theses">
+                  
 
 
 
@@ -4140,43 +4202,43 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    
-      <div class="pub-category" data-category="2019">
-        <h2 class="pub-category-title">2019</h2><hr />
-        
-          
-            <div class="pub-entry" data-year="2019" data-venue="theses">
+                </div>
               
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+          <div class="pub-category" data-category="2019">
+            <h2 class="pub-category-title">2019</h2><hr />
+            
+              
+                <div class="pub-entry" data-year="2019" data-venue="theses">
+                  
 
 
 
@@ -4287,83 +4349,44 @@
     });
   });
   </script>
-            </div>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
+                </div>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
         
       </div>
-    
+    </div>
   </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const venueView = document.getElementById('venue-view');
-  const yearView = document.getElementById('year-view');
-  const venueButton = document.createElement('button');
-  const yearButton = document.createElement('button');
-
-  venueButton.textContent = 'Sort by Venue';
-  yearButton.textContent = 'Sort by Year';
-  venueButton.id = 'sort-by-venue';
-  yearButton.id = 'sort-by-year';
-
-  venueButton.style.marginRight = '10px';
-  venueButton.classList.add('active'); // Default active button
-
-  const filterContainer = document.getElementById('pub-filter');
-  filterContainer.innerHTML = ''; // Clear existing dropdown
-  filterContainer.appendChild(venueButton);
-  filterContainer.appendChild(yearButton);
-
-  const updateView = (sortBy) => {
-    if (sortBy === 'year') {
-      venueView.style.display = 'none';
-      yearView.style.display = 'block';
-      yearButton.classList.add('active');
-      venueButton.classList.remove('active');
-    } else {
-      yearView.style.display = 'none';
-      venueView.style.display = 'block';
-      venueButton.classList.add('active');
-      yearButton.classList.remove('active');
-    }
-  };
-
-  venueButton.addEventListener('click', () => updateView('venue'));
-  yearButton.addEventListener('click', () => updateView('year'));
-});
-</script>
-
   </div>
 </div>
 
