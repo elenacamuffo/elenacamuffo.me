@@ -74,7 +74,9 @@ redirect_from:
 
 {% include base_path %}
 
-Research Scientist, specializing in 3D Computer Vision with both academic and professional background. Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a proven track record of publications, teaching, and innovative project development.
+Research Scientist, specializing in 3D Graphics with both academic and professional background. 
+
+Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a proven track record of publications, teaching, and innovative project development.
 
 <div class="cv-section">
   <h2>Education</h2>

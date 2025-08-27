@@ -22,7 +22,7 @@ repository               : "elenacamuffo/elenacamuffo.me"
 author:
   # Biographic information
   avatar           : "elena.jpeg"
-  name             : "AI & Graphics Research Scientist" #"Researcher & Tech Artist"
+  name             : "AI & Graphics Researcher" #"Researcher & Tech Artist"
   pronouns         : # example: "she/her"  
   bio              : "PostDoc Researcher at Unipd. Learning to be a Tech Artist. \ Creative and passionate about blending art and technology." 
   location         : "Padova, Italy"

@@ -2,7 +2,6 @@
 permalink: /
 title: ""
 author_profile: true
-classes: full-width
 redirect_from: 
   - /about/
   - /about.html
@@ -91,8 +90,8 @@ social-icons a:hover {
 
 Hello! My name is **Elena**, and I am a computer graphics enthusiast.
 
-I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **Computer Vision**, particularly on **foundational and generative AI** and **3D Gaussian splatting**.
-Parallely, I am studying [**3D Technical Art**](portfolio) with [**Houdini**](projects).
+I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **3D Computer Vision**, particularly on **foundational AI** and **Gaussian splatting**.
+Parallely, I am studying [**3D Technical Art**](portfolio) with **Houdini**.
 
 ---
 
@@ -119,7 +118,12 @@ In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), wh
 ### 🚀 Vision & Future Goals
 
 I see myself at the intersection of **research**, **creative technologies**, and **education**.  
+I’m passionate about blending the rigour of mathematics with the creativity of digital arts. 
+My goal is to create something beautiful, yet precise; systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. 
+I’m especially interested in combining **vision**, **graphics**, and **AI** whether in **academia**, **R&D**, or the **creative industry**.
+
+<!-- I see myself at the intersection of **research**, **creative technologies**, and **education**.  
 I’m passionate about blending the precision of mathematics with the creativity of digital arts. 
-My goal is to develop systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**.
+My goal is to create systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**. -->
 
 ---

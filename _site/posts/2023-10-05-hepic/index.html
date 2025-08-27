@@ -186,12 +186,12 @@
 
   <div class="author__avatar">
     
-    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI & Graphics Research Scientist">
+    	<img src="http://localhost:4000/images/elena.jpeg" class="author__avatar" alt="AI & Graphics Researcher">
     
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">AI & Graphics Research Scientist</h3>
+    <h3 class="author__name">AI & Graphics Researcher</h3>
     
     <p class="author__bio">PostDoc Researcher at Unipd. Learning to be a Tech Artist.  Creative and passionate about blending art and technology.</p>
   </div>
