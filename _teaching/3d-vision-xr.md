@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course, M.Sc. in Internet and Multimedia Engineering"
 permalink: /teaching/3d-vision-xr
 venue: "University of Padova"
-date: 2024-01-01
+# date: 2024-01-01
 location: "Padova, Italy"
 ---
 
