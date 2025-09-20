@@ -7,7 +7,7 @@ permalink: /publication/2025-mocha
 excerpt: 
 year: 2025
 venue: 'ArXiv preprint'
-paperurl: hhttps://arxiv.org/pdf/2509.14001
+paperurl: https://arxiv.org/pdf/2509.14001
 citation: 'Camuffo E., Barbato F., Ozay M., Milani S. and Michieli U., "MOCHA: Multi-modal Objects-aware Cross-arcHitecture Alignment", <i>ArXiv preprint</i>, 2025.'
 bib: "@article{camuffo2025mocha,
     title={MOCHA: Multi-modal Objects-aware Cross-arcHitecture Alignment},
