@@ -6,7 +6,7 @@ category: conferences
 permalink: /publication/2025-mocha
 excerpt: 
 year: 2025
-venue: 'International Mediterranean Conference on Communications and Networking (MeditCOM)'
+venue: 'ArXiv preprint'
 paperurl: hhttps://arxiv.org/pdf/2509.14001
 citation: 'Camuffo E., Barbato F., Ozay M., Milani S. and Michieli U., "MOCHA: Multi-modal Objects-aware Cross-arcHitecture Alignment", <i>ArXiv preprint</i>, 2025.'
 bib: "@article{camuffo2025mocha,
