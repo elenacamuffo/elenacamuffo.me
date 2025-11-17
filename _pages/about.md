@@ -14,116 +14,181 @@ redirect_from:
   </blockquote>
 </div>
 
----
-
-<!--style>
-.profile-container {
-  float: left;
-  margin-right: 30px;
+<style>
+.quote-page {
   text-align: center;
-  width: 150px;
+  margin: 40px 0;
+  font-family: 'Georgia', serif;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.social-icons-custom a {
-  font-size: 1.1rem;
-  margin: 0 6px;
+blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
   color: #555;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #f9f9f9;
+  border-left: 5px solid #d4a5a5;
+  border-radius: 8px;
+}
+
+blockquote:before {
+  content: "“";
+  font-size: 4rem;
+  color: #d4a5a5;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #777;
+  text-align: right;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px auto 60px;
+  max-width: 1100px;
+  padding: 0 16px;
+}
+
+.card-image {
+  width: 100%;
+  height: 190px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.card {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 20px 20px 24px;
+  width: calc(46% - 12px);
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px #d4a5a5;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 0 0 2px #e1c3c3, 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover .card-image {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 6px 0 0;
   text-decoration: none;
 }
 
-social-icons a:hover {
-  color: #000;
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: #b36b6b;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
 </style>
-
-
-<div class="profile-container">
-  <img src="/images/bio-photo.jpg" class="profile-pic" alt="Elena Camuffo">
-  
-  <div class="social-icons-custom">
-    <a href="https://github.com/elenacamuffo" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://scholar.google.com/citations?user=XXXXX" target="_blank"><i class="ai ai-google-scholar"></i></a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-</div-->
-
-<style>
-  .quote-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-style: italic;
-  font-family: Georgia, serif;
-}
-
-.quote-page blockquote {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.quote-page footer {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
-  font-style: normal;
-  color: #777;
-}
-</style>
-
-<!-- 
-# Too technical to be an artist, too creative to be an engineer. That's the curse of researchers in graphics and TAs.
- -->
 
 ---
 
 Hello! My name is **Elena**, and I am a computer graphics enthusiast.
 
-I am currently working as a [**postdoctoral research scientist**](https://medialab.dei.unipd.it/members/elena-camuffo/) at the **University of Padova**, leading research in **3D Computer Vision**, particularly on **foundational AI** and **Gaussian splatting**.
-Parallely, I am studying [**3D Technical Art**](portfolio) with **Houdini**.
+I am currently a [**PostDoc @ UniPD**](https://medialab.dei.unipd.it/members/elena-camuffo/)-- I do research in **3D Vision & Graphics**.
+My projects include:
+1. **Gaussian Splatting (GS) Optimization for VR devices**, 
+2. **Panoptic Segmentation in GS**, 
+3. **Meshification from GS-like Structures**.
+
+I am studying [**3D Technical Art**](portfolio)--  I work with **Houdini**, **Unreal Engine** and **Maya**.
 
 ---
+
+# ✨ Highlights
 
 ### 🎓 Research & Academic Path
 
-After earning my **M.Sc. in TLC Engineering** in 2021, I did a **Ph.D. in Information Engineering** at the University of Padova, where I focused on **visual representations for scene understanding**.
-During my Ph.D., I:
-
-- Published [**over 10 papers**](publications) in international conferences and journals  
-(*SIGGRAPH, TOG, TMM, ICASSP, ICIP, IROS*, etc.),
-- Spent several months at **Samsung Research UK**, where I co-authored two papers and contributed to a **patent**,
-- Supervised young researchers and master students, and supported teaching across several [**Master’s courses**](teachings),
-- Contributed to applied [projects](projects) in **XR**, **education**, and **interdisciplinary research**.
-
----
+- In 2025 I earned my **PhD** @ UniPD, focused on **Visual Representations for Scene Understanding**.
+- Published papers in international conferences and journals (TOG, TMM, ICASSP, ICIP, IROS, etc.).
+- Supervised PhD and MSc students. Supported teaching across MSc courses.
 
 ### 🎨 Creative Technology & Digital Arts
 
-Alongside my academic work, I’ve always been drawn to the **creative side of technology**.  
-In 2024, I attended the [**BigRock Master in Computer Graphics**](portfolio), where I honed my artistic skills in **digital art**, **real-time rendering**, and **storytelling**, using tools like **Maya**, **ZBrush**, and **Unreal Engine**.
+- In 2025 I earned my **Master** in **Computer Graphics** @ BigRock Institute of Magic Technologies.
+
+--- 
+
+<div class="cards-container">
+  <a class="card" href="publications">
+    <img class="card-image" src="images/prj/hepic.png" alt="Publications">
+    <h3>Publications</h3>
+    <!--p>Published papers in international conferences and journals (<strong>TOG, TMM, ICASSP, ICIP, IROS</strong>, etc.).</p-->
+  </a>
+  <a class="card" href="teaching">
+    <img class="card-image"  src="images/prj/venetonight.jfif" alt="Academia">
+    <h3>Academia</h3>
+    <!--p>Supervised young researchers and MSc students. Supported teaching across MSc courses, including <strong>3D Vision</strong>.</p-->
+  </a>
+  <a class="card" href="projects">
+    <img class="card-image"  src="images/prj/papers_503s2-file2.jpg" alt="Projects">
+    <h3>Projects</h3>
+    <!--p>Contributed to applied projects in <strong>XR</strong>, <strong>education</strong>, and <strong>interdisciplinary research</strong>.</p-->
+  </a>
+  <a class="card" href="portfolio">
+    <img class="card-image" src="images/bigrock/Elena_Camuffo_01.png" alt="Portfolio">
+    <h3>Portfolio</h3>
+    <!--p>Exploring <strong>digital art</strong>, <strong>real-time rendering</strong>, and <strong>storytelling</strong> with tools like <strong>Maya</strong>, <strong>ZBrush</strong>, and <strong>Unreal Engine</strong>.</p-->
+  </a>
+</div>
 
 ---
 
-### 🚀 Vision & Future Goals
+# 🚀 Vision & Future Goals
 
-I see myself at the intersection of **research**, **creative technologies**, and **education**.  
-I’m passionate about blending the rigour of mathematics with the creativity of digital arts. 
-My goal is to create something beautiful, yet precise; systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. 
-I’m especially interested in combining **vision**, **graphics**, and **AI** whether in **academia**, **R&D**, or the **creative industry**.
+What next? 
 
-<!-- I see myself at the intersection of **research**, **creative technologies**, and **education**.  
-I’m passionate about blending the precision of mathematics with the creativity of digital arts. 
-My goal is to create systems that not only **perceive and interact** with the world but also enable **intuitive and expressive experiences**, making advanced technologies more approachable and impactful. I’m especially interested in projects that combine **AI**, **vision**, and **graphics** whether in **academia**, **R&D**, or the **creative industry**. -->
+The leading engine of my career is my desire to blend **mathematical rigour** with the fascinating beauty of **visual art and storytelling**. My goal is to create something beautiful, yet precise.
+
+I see myself at the intersection of research, creative technologies, and education.
+
+I am especially interested in combining **vision**, **graphics**, and **AI** disciplines to produce **impactful experiences** that connect technology with human creativity and perception.
 
 ---
