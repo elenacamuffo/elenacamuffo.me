@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Elena Camuffo"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -110,10 +110,24 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
   <div class="cv-entry">
     <img src="/images/cv/unipd.png" class="profile-pic" alt="unipd">
     <div class="cv-entry-content">
+    <ul style="list-style-type: none; padding-left: 0;">   
+    <li>
+    <div>
       <p>Postdoctoral Research Scientist (2024 – Present)</p>
       <ul>
         <li>University of Padova, Padova, Italy<br>Conducted research in 3D Computer Vision, VR/AR Optimization, Multimodal Scene Understanding, and Visual Representation Learning.<br>Supervised and mentored M.Sc. and Ph.D. students.</li>
       </ul>
+    </div>
+    </li>
+    <li>
+    <div>
+      <p>Teaching Assistant (2019 – 2024) <a href="../teaching">[teaching]</a></p>
+      <ul>
+        <li>University of Padova, Padova, Italy<br>Prepared and taught lab lectures in courses such as “3D Vision and eXtended Reality,” “Digital Forensics,” “Digital and Interactive Multimedia,” and “Usability and User Experience.”<br>Over 4 years of teaching Unity.</li>
+      </ul>
+    </div>
+    </li>
+    </ul>
     </div>
   </div>
 
@@ -128,17 +142,7 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
   </div>
 
   <div class="cv-entry">
-    <img src="/images/cv/unipd.png" class="profile-pic" alt="unipd">
-    <div class="cv-entry-content">
-      <p>Teaching Assistant (2019 – 2024) <a href="../teaching">[teaching]</a></p>
-      <ul>
-        <li>University of Padova, Padova, Italy<br>Prepared and taught lab lectures in courses such as “3D Vision and eXtended Reality,” “Digital Forensics,” “Digital and Interactive Multimedia,” and “Usability and User Experience.”<br>Over 4 years of teaching Unity.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cv-entry">
-    <img src="/images/cv/uqido.png" class="profile-pic" alt="uqido">
+    <img src="/images/cv/uqido_logo.jpeg" class="profile-pic" alt="uqido">
     <div class="cv-entry-content">
       <p>Unity (C#) Developer (2022)</p>
       <ul>
