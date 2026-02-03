@@ -79,6 +79,54 @@ Research Scientist, specializing in 3D Graphics with both academic and professio
 Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a proven track record of publications, teaching, and innovative project development.
 
 <div class="cv-section">
+  <h2>Work Experience</h2>
+
+  <div class="cv-entry">
+    <img src="/images/cv/unipd.png" class="profile-pic" alt="unipd">
+    <div class="cv-entry-content">
+    <ul style="list-style-type: none; padding-left: 0;">   
+    <li>
+    <div>
+      <p>Postdoctoral Researcher (2024 – Present)</p>
+      <ul>
+        <li>University of Padova, Padova, Italy<br>Conducted research in 3D Vision & Graphics (Gaussian Splatting for VR/AR optimization and for Panoptic Segmentation), Multimodal Scene Understanding & Visual Representation Learning.<br>Supervised and mentored M.Sc. and Ph.D. students.</li>
+      </ul>
+    </div>
+    </li>
+    <li>
+    <div>
+      <p>Teaching Assistant (2019 – 2024) <a href="../teaching">[teaching]</a></p>
+      <ul>
+        <li>University of Padova, Padova, Italy<br>Prepared and taught lab lectures in courses such as “3D Vision and eXtended Reality,” “Digital Forensics,” “Digital and Interactive Multimedia,” and “Usability and User Experience.”<br>Over 4 years of teaching Unity.</li>
+      </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="/images/cv/samsung2.png" class="profile-pic" alt="samsung">
+    <div class="cv-entry-content">
+      <p>AI & Graphics Research Intern (2023 – 2024)</p>
+      <ul>
+        <li>Samsung Research, London, UK<br>Advisor: Dr. Mete Ozay<br>Improved existing algorithms for efficient personalized object detection and recognition.<br>Developed on-device solutions.<br>Published 2 papers and filed 1 patent.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="/images/cv/uqido_logo.jpeg" class="profile-pic" alt="uqido">
+    <div class="cv-entry-content">
+      <p>Unity (C#) Developer (2022)</p>
+      <ul>
+        <li>Uqido S.R.L., Padova, Italy<br>Developed a VR application for Quest 2 in collaboration with the Department of Pharmaceutical Sciences.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="cv-section">
   <h2>Education</h2>
 
   <div class="cv-entry">
@@ -99,54 +147,6 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
       <p>BigRock Institute of Magic Technologies, Treviso, Italy </p>
       <ul>
         <li><strong>Master in Computer Graphics</strong> (2024 – 2025)<br>Professional training in technical and artistic skills for 3D Computer Graphics.<br>Certified in Autodesk Maya. <a href="../portfolio">[portfolio]</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="cv-section">
-  <h2>Work Experience</h2>
-
-  <div class="cv-entry">
-    <img src="/images/cv/unipd.png" class="profile-pic" alt="unipd">
-    <div class="cv-entry-content">
-    <ul style="list-style-type: none; padding-left: 0;">   
-    <li>
-    <div>
-      <p>Postdoctoral Research Scientist (2024 – Present)</p>
-      <ul>
-        <li>University of Padova, Padova, Italy<br>Conducted research in 3D Computer Vision, VR/AR Optimization, Multimodal Scene Understanding, and Visual Representation Learning.<br>Supervised and mentored M.Sc. and Ph.D. students.</li>
-      </ul>
-    </div>
-    </li>
-    <li>
-    <div>
-      <p>Teaching Assistant (2019 – 2024) <a href="../teaching">[teaching]</a></p>
-      <ul>
-        <li>University of Padova, Padova, Italy<br>Prepared and taught lab lectures in courses such as “3D Vision and eXtended Reality,” “Digital Forensics,” “Digital and Interactive Multimedia,” and “Usability and User Experience.”<br>Over 4 years of teaching Unity.</li>
-      </ul>
-    </div>
-    </li>
-    </ul>
-    </div>
-  </div>
-
-  <div class="cv-entry">
-    <img src="/images/cv/samsung2.png" class="profile-pic" alt="samsung">
-    <div class="cv-entry-content">
-      <p>AI and Graphics Research Intern (2023 – 2024)</p>
-      <ul>
-        <li>Samsung Research, London, UK<br>Advisor: Dr. Mete Ozay<br>Improved existing algorithms for efficient personalized object detection and recognition.<br>Developed on-device solutions.<br>Published 2 papers and filed 1 patent.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cv-entry">
-    <img src="/images/cv/uqido_logo.jpeg" class="profile-pic" alt="uqido">
-    <div class="cv-entry-content">
-      <p>Unity (C#) Developer (2022)</p>
-      <ul>
-        <li>Uqido S.R.L., Padova, Italy<br>Developed a VR application for Quest 2 in collaboration with the Department of Pharmaceutical Sciences.</li>
       </ul>
     </div>
   </div>
