@@ -132,13 +132,9 @@ blockquote footer {
 
 Hello! My name is **Elena**, and I am a computer graphics enthusiast.
 
-I am currently a [**PostDoc @ UniPD**](https://medialab.dei.unipd.it/members/elena-camuffo/)-- I do research in **3D Vision & Graphics**.
-My projects include:
-1. **Gaussian Splatting (GS) Optimization for VR devices**, 
-2. **Panoptic Segmentation in GS**, 
-3. **Meshification from GS-like Structures**.
+In March 2026 I joined **CLO Virtual Fashion** as a Research Scientist.
 
-I am studying [**3D Technical Art**](portfolio)--  I work with **Houdini**, **Unreal Engine** and **Maya**.
+Studying as [**3D Technical Art**](portfolio)--  I work with **Houdini**, **Unreal Engine** and **Maya**.
 
 ---
 
@@ -146,9 +142,15 @@ I am studying [**3D Technical Art**](portfolio)--  I work with **Houdini**, **Un
 
 ### 🎓 Research & Academic Path
 
+<!-- I am currently a [**PostDoc @ UniPD**](https://medialab.dei.unipd.it/members/elena-camuffo/)-- I do research in **3D Vision & Graphics**.
+My projects include:
+1. **Gaussian Splatting (GS) Optimization for VR devices**, 
+2. **Panoptic Segmentation in GS**, 
+3. **Meshification from GS-like Structures**. -->
+
 - In 2025 I earned my **PhD** @ UniPD, focused on **Visual Representations for Scene Understanding**.
 - Published papers in international conferences and journals (TOG, TMM, ICASSP, ICIP, IROS, etc.).
-- Supervised PhD and MSc students. Supported teaching across MSc courses.
+- During **PostDoc** I supervised PhD and MSc students. Supported teaching across MSc courses.
 
 ### 🎨 Creative Technology & Digital Arts
 

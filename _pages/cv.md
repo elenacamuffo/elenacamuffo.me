@@ -82,12 +82,25 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
   <h2>Work Experience</h2>
 
   <div class="cv-entry">
+    <img src="/images/cv/clo.jpeg" class="profile-pic" alt="clo">
+    <div class="cv-entry-content">
+      <p>AI & Graphics Research Scientist (2025 – Present)</p>
+      <ul>
+        <li>CLO Virtual Fashion, Madrid, ES
+        <br>Research Scientist, working on CLO and Marvelous Designer. 
+            Cloth simulation, digital garments, and optimization for next-generation digital fashion technologies, using computer graphics, physics-based simulation, and AI-driven technologies.
+            </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-entry">
     <img src="/images/cv/unipd.png" class="profile-pic" alt="unipd">
     <div class="cv-entry-content">
     <ul style="list-style-type: none; padding-left: 0;">   
     <li>
     <div>
-      <p>Postdoctoral Researcher (2024 – Present)</p>
+      <p>Postdoctoral Researcher (2024 – 2026)</p>
       <ul>
         <li>University of Padova, Padova, Italy<br>Conducted research in 3D Vision & Graphics (Gaussian Splatting for VR/AR optimization and for Panoptic Segmentation), Multimodal Scene Understanding & Visual Representation Learning.<br>Supervised and mentored M.Sc. and Ph.D. students.</li>
       </ul>
