@@ -84,9 +84,9 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
   <div class="cv-entry">
     <img src="/images/cv/clo.jpeg" class="profile-pic" alt="clo">
     <div class="cv-entry-content">
-      <p>AI & Graphics Research Scientist (2025 – Present)</p>
+      <p>AI & Graphics Research Scientist (2026 – Present)</p>
       <ul>
-        <li>CLO Virtual Fashion, Madrid, ES
+        <li>CLO Virtual Fashion, Madrid, Spain
         <br>Research Scientist, working on CLO and Marvelous Designer. 
             Cloth simulation, digital garments, and optimization for next-generation digital fashion technologies, using computer graphics, physics-based simulation, and AI-driven technologies.
             </li>

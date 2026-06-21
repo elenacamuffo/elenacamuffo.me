@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Elena Camuffo, PhD"
 title_separator          : "-"
 name                     : &name "Elena Camuffo"
-description              : &description "Computer Graphics Enthusiast | Researcher | Tech Artist | PostDoc at Unipd | Passionate about blending art and technology."
+description              : &description "Computer Graphics Enthusiast | Researcher | Passionate about blending art and technology."
 url                      : https://elenacamuffo.me # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "elenacamuffo/elenacamuffo.me"
@@ -24,7 +24,7 @@ author:
   avatar           : "elena.jpeg"
   name             : "AI & Graphics Researcher" #"Researcher & Tech Artist"
   pronouns         : # example: "she/her"  
-  bio              : "Research Scientist & Tech Artist" #PostDoc Researcher at Unipd. Learning to be a Tech Artist. Creative and passionate about blending art and technology.
+  bio              : "Research Scientist" #PostDoc Researcher at Unipd. Learning to be a Tech Artist. Creative and passionate about blending art and technology.
   location         : "Padova, Italy"
   employer         : "University of Padova"
   uri              : # URL

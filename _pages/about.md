@@ -134,7 +134,7 @@ Hello! My name is **Elena**, and I am a computer graphics enthusiast.
 
 In March 2026 I joined **CLO Virtual Fashion** as a Research Scientist.
 
-Studying [**3D Technical Art**](portfolio)-- **Houdini**, **Unreal Engine** and **Maya**.
+<!-- Studying [**3D Technical Art**](portfolio)-- **Houdini**, **Unreal Engine** and **Maya**. -->
 
 ---
 
