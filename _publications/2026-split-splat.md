@@ -2,7 +2,7 @@
 title: "Split&Splat: Zero-Shot Panoptic Segmentation via Explicit Instance Modeling and 3D Gaussian Splatting"
 authors: Leonardo Monchieri, Elena Camuffo, Francesco Barbato, Pietro Zanuttigh, Simone Milani
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/2026-split-splat
 excerpt: 
 year: 2026
