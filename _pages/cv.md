@@ -168,7 +168,7 @@ Proficient in Python, C++, and Graphics software (Unity, Autodesk Maya), with a 
 <div class="cv-section">
   <h2>Skills</h2>
   <ul>
-    <li><strong>Languages</strong>: Italian (C2), English (C1), French (A2)</li>
+    <li><strong>Languages</strong>: Italian (C2), English (C1), French (B1), Spanish (A2)</li>
     <li><strong>Programming</strong>: Python, C++, MATLAB, C, C#, Bash, TensorFlow, PyTorch, OpenCV</li>
     <li><strong>Software</strong>: Autodesk Maya, Blender, Unreal Engine (C++), Unity (C#), Houdini, Adobe Photoshop, Marvelous Designer, Substance Painter, ZBrush</li>
     <li><strong>Soft Skills</strong>: Public speaking, Mentoring, Teamwork, and Project management</li>
